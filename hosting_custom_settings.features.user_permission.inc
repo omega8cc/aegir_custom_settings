@@ -3,7 +3,7 @@
 /**
  * Implementation of hook_user_default_permissions().
  */
-function aegir_custom_settings_user_default_permissions() {
+function hosting_custom_settings_user_default_permissions() {
   $permissions = array();
 
   // Exported permission: access administration menu
@@ -19,6 +19,22 @@ function aegir_custom_settings_user_default_permissions() {
     'name' => 'access administration pages',
     'roles' => array(
       '0' => 'root',
+    ),
+  );
+
+  // Exported permission: access all views
+  $permissions['access all views'] = array(
+    'name' => 'access all views',
+    'roles' => array(),
+  );
+
+  // Exported permission: access comments
+  $permissions['access comments'] = array(
+    'name' => 'access comments',
+    'roles' => array(
+      '0' => 'admin',
+      '1' => 'aegir account manager',
+      '2' => 'root',
     ),
   );
 
@@ -131,6 +147,14 @@ function aegir_custom_settings_user_default_permissions() {
     ),
   );
 
+  // Exported permission: administer comments
+  $permissions['administer comments'] = array(
+    'name' => 'administer comments',
+    'roles' => array(
+      '0' => 'root',
+    ),
+  );
+
   // Exported permission: administer content types
   $permissions['administer content types'] = array(
     'name' => 'administer content types',
@@ -166,12 +190,6 @@ function aegir_custom_settings_user_default_permissions() {
   // Exported permission: administer hosting aliases
   $permissions['administer hosting aliases'] = array(
     'name' => 'administer hosting aliases',
-    'roles' => array(),
-  );
-
-  // Exported permission: administer hosting cdn
-  $permissions['administer hosting cdn'] = array(
-    'name' => 'administer hosting cdn',
     'roles' => array(),
   );
 
@@ -222,6 +240,22 @@ function aegir_custom_settings_user_default_permissions() {
     ),
   );
 
+  // Exported permission: administer platforms
+  $permissions['administer platforms'] = array(
+    'name' => 'administer platforms',
+    'roles' => array(
+      '0' => 'admin',
+      '1' => 'aegir platform manager',
+      '2' => 'root',
+    ),
+  );
+
+  // Exported permission: administer servers
+  $permissions['administer servers'] = array(
+    'name' => 'administer servers',
+    'roles' => array(),
+  );
+
   // Exported permission: administer site configuration
   $permissions['administer site configuration'] = array(
     'name' => 'administer site configuration',
@@ -260,6 +294,12 @@ function aegir_custom_settings_user_default_permissions() {
       '0' => 'admin',
       '1' => 'root',
     ),
+  );
+
+  // Exported permission: administer views
+  $permissions['administer views'] = array(
+    'name' => 'administer views',
+    'roles' => array(),
   );
 
   // Exported permission: cancel own tasks
@@ -341,15 +381,6 @@ function aegir_custom_settings_user_default_permissions() {
     ),
   );
 
-  // Exported permission: create cdn domains
-  $permissions['create cdn domains'] = array(
-    'name' => 'create cdn domains',
-    'roles' => array(
-      '0' => 'admin',
-      '1' => 'root',
-    ),
-  );
-
   // Exported permission: create client
   $permissions['create client'] = array(
     'name' => 'create client',
@@ -365,7 +396,8 @@ function aegir_custom_settings_user_default_permissions() {
     'name' => 'create clone task',
     'roles' => array(
       '0' => 'admin',
-      '1' => 'root',
+      '1' => 'aegir client',
+      '2' => 'root',
     ),
   );
 
@@ -374,18 +406,7 @@ function aegir_custom_settings_user_default_permissions() {
     'name' => 'create delete task',
     'roles' => array(
       '0' => 'admin',
-      '1' => 'aegir client',
-      '2' => 'root',
-    ),
-  );
-
-  // Exported permission: create delete_rebuild_registry task
-  $permissions['create delete_rebuild_registry task'] = array(
-    'name' => 'create delete_rebuild_registry task',
-    'roles' => array(
-      '0' => 'admin',
-      '1' => 'aegir client',
-      '2' => 'root',
+      '1' => 'root',
     ),
   );
 
@@ -419,6 +440,12 @@ function aegir_custom_settings_user_default_permissions() {
     ),
   );
 
+  // Exported permission: create flush_drush_cache task
+  $permissions['create flush_drush_cache task'] = array(
+    'name' => 'create flush_drush_cache task',
+    'roles' => array(),
+  );
+
   // Exported permission: create lock task
   $permissions['create lock task'] = array(
     'name' => 'create lock task',
@@ -440,7 +467,8 @@ function aegir_custom_settings_user_default_permissions() {
     'name' => 'create migrate task',
     'roles' => array(
       '0' => 'admin',
-      '1' => 'root',
+      '1' => 'aegir client',
+      '2' => 'root',
     ),
   );
 
@@ -461,7 +489,8 @@ function aegir_custom_settings_user_default_permissions() {
     'name' => 'create platform',
     'roles' => array(
       '0' => 'admin',
-      '1' => 'root',
+      '1' => 'aegir platform manager',
+      '2' => 'root',
     ),
   );
 
@@ -488,11 +517,7 @@ function aegir_custom_settings_user_default_permissions() {
   // Exported permission: create run_cron task
   $permissions['create run_cron task'] = array(
     'name' => 'create run_cron task',
-    'roles' => array(
-      '0' => 'admin',
-      '1' => 'aegir client',
-      '2' => 'root',
-    ),
+    'roles' => array(),
   );
 
   // Exported permission: create server
@@ -520,10 +545,35 @@ function aegir_custom_settings_user_default_permissions() {
     ),
   );
 
+  // Exported permission: create site_health_check task
+  $permissions['create site_health_check task'] = array(
+    'name' => 'create site_health_check task',
+    'roles' => array(
+      '0' => 'admin',
+      '1' => 'aegir client',
+      '2' => 'root',
+    ),
+  );
+
+  // Exported permission: create sites on locked platforms
+  $permissions['create sites on locked platforms'] = array(
+    'name' => 'create sites on locked platforms',
+    'roles' => array(),
+  );
+
   // Exported permission: create unlock task
   $permissions['create unlock task'] = array(
     'name' => 'create unlock task',
     'roles' => array(),
+  );
+
+  // Exported permission: create update task
+  $permissions['create update task'] = array(
+    'name' => 'create update task',
+    'roles' => array(
+      '0' => 'admin',
+      '1' => 'root',
+    ),
   );
 
   // Exported permission: create verify task
@@ -554,8 +604,7 @@ function aegir_custom_settings_user_default_permissions() {
   $permissions['delete own client'] = array(
     'name' => 'delete own client',
     'roles' => array(
-      '0' => 'admin',
-      '1' => 'root',
+      '0' => 'root',
     ),
   );
 
@@ -678,6 +727,341 @@ function aegir_custom_settings_user_default_permissions() {
     ),
   );
 
+  // Exported permission: execute Ban IP address of current user (user_block_ip_action)
+  $permissions['execute Ban IP address of current user (user_block_ip_action)'] = array(
+    'name' => 'execute Ban IP address of current user (user_block_ip_action)',
+    'roles' => array(),
+  );
+
+  // Exported permission: execute Block current user (user_block_user_action)
+  $permissions['execute Block current user (user_block_user_action)'] = array(
+    'name' => 'execute Block current user (user_block_user_action)',
+    'roles' => array(),
+  );
+
+  // Exported permission: execute Block the selected users (user_user_operations_block)
+  $permissions['execute Block the selected users (user_user_operations_block)'] = array(
+    'name' => 'execute Block the selected users (user_user_operations_block)',
+    'roles' => array(),
+  );
+
+  // Exported permission: execute Change comment settings (views_bulk_operations_comment_setting_action)
+  $permissions['execute Change comment settings (views_bulk_operations_comment_setting_action)'] = array(
+    'name' => 'execute Change comment settings (views_bulk_operations_comment_setting_action)',
+    'roles' => array(),
+  );
+
+  // Exported permission: execute Change the author of a post (node_assign_owner_action)
+  $permissions['execute Change the author of a post (node_assign_owner_action)'] = array(
+    'name' => 'execute Change the author of a post (node_assign_owner_action)',
+    'roles' => array(),
+  );
+
+  // Exported permission: execute Delete comment (views_bulk_operations_delete_comment_action)
+  $permissions['execute Delete comment (views_bulk_operations_delete_comment_action)'] = array(
+    'name' => 'execute Delete comment (views_bulk_operations_delete_comment_action)',
+    'roles' => array(),
+  );
+
+  // Exported permission: execute Delete node (views_bulk_operations_delete_node_action)
+  $permissions['execute Delete node (views_bulk_operations_delete_node_action)'] = array(
+    'name' => 'execute Delete node (views_bulk_operations_delete_node_action)',
+    'roles' => array(),
+  );
+
+  // Exported permission: execute Delete term (views_bulk_operations_delete_term_action)
+  $permissions['execute Delete term (views_bulk_operations_delete_term_action)'] = array(
+    'name' => 'execute Delete term (views_bulk_operations_delete_term_action)',
+    'roles' => array(),
+  );
+
+  // Exported permission: execute Delete user (views_bulk_operations_delete_user_action)
+  $permissions['execute Delete user (views_bulk_operations_delete_user_action)'] = array(
+    'name' => 'execute Delete user (views_bulk_operations_delete_user_action)',
+    'roles' => array(),
+  );
+
+  // Exported permission: execute Demote from front page (node_mass_update)
+  $permissions['execute Demote from front page (node_mass_update)'] = array(
+    'name' => 'execute Demote from front page (node_mass_update)',
+    'roles' => array(),
+  );
+
+  // Exported permission: execute Display a message to the user (system_message_action)
+  $permissions['execute Display a message to the user (system_message_action)'] = array(
+    'name' => 'execute Display a message to the user (system_message_action)',
+    'roles' => array(),
+  );
+
+  // Exported permission: execute Download archive of selected files (views_bulk_operations_archive_action)
+  $permissions['execute Download archive of selected files (views_bulk_operations_archive_action)'] = array(
+    'name' => 'execute Download archive of selected files (views_bulk_operations_archive_action)',
+    'roles' => array(),
+  );
+
+  // Exported permission: execute Execute a VBO programmatically (views_bulk_operations_action)
+  $permissions['execute Execute a VBO programmatically (views_bulk_operations_action)'] = array(
+    'name' => 'execute Execute a VBO programmatically (views_bulk_operations_action)',
+    'roles' => array(),
+  );
+
+  // Exported permission: execute Execute arbitrary PHP script (views_bulk_operations_script_action)
+  $permissions['execute Execute arbitrary PHP script (views_bulk_operations_script_action)'] = array(
+    'name' => 'execute Execute arbitrary PHP script (views_bulk_operations_script_action)',
+    'roles' => array(),
+  );
+
+  // Exported permission: execute Make post sticky (node_make_sticky_action)
+  $permissions['execute Make post sticky (node_make_sticky_action)'] = array(
+    'name' => 'execute Make post sticky (node_make_sticky_action)',
+    'roles' => array(),
+  );
+
+  // Exported permission: execute Make post unsticky (node_make_unsticky_action)
+  $permissions['execute Make post unsticky (node_make_unsticky_action)'] = array(
+    'name' => 'execute Make post unsticky (node_make_unsticky_action)',
+    'roles' => array(),
+  );
+
+  // Exported permission: execute Make sticky (node_mass_update)
+  $permissions['execute Make sticky (node_mass_update)'] = array(
+    'name' => 'execute Make sticky (node_mass_update)',
+    'roles' => array(),
+  );
+
+  // Exported permission: execute Modify user roles (views_bulk_operations_user_roles_action)
+  $permissions['execute Modify user roles (views_bulk_operations_user_roles_action)'] = array(
+    'name' => 'execute Modify user roles (views_bulk_operations_user_roles_action)',
+    'roles' => array(),
+  );
+
+  // Exported permission: execute Move book page to new parent (views_bulk_operations_move_book_action)
+  $permissions['execute Move book page to new parent (views_bulk_operations_move_book_action)'] = array(
+    'name' => 'execute Move book page to new parent (views_bulk_operations_move_book_action)',
+    'roles' => array(),
+  );
+
+  // Exported permission: execute Pass objects as arguments to a page (views_bulk_operations_argument_selector_action)
+  $permissions['execute Pass objects as arguments to a page (views_bulk_operations_argument_selector_action)'] = array(
+    'name' => 'execute Pass objects as arguments to a page (views_bulk_operations_argument_selector_action)',
+    'roles' => array(),
+  );
+
+  // Exported permission: execute Platform: Delete (hosting_platform_op_delete)
+  $permissions['execute Platform: Delete (hosting_platform_op_delete)'] = array(
+    'name' => 'execute Platform: Delete (hosting_platform_op_delete)',
+    'roles' => array(
+      '0' => 'admin',
+      '1' => 'aegir administrator',
+      '2' => 'aegir platform manager',
+      '3' => 'root',
+    ),
+  );
+
+  // Exported permission: execute Platform: Lock (hosting_platform_op_lock)
+  $permissions['execute Platform: Lock (hosting_platform_op_lock)'] = array(
+    'name' => 'execute Platform: Lock (hosting_platform_op_lock)',
+    'roles' => array(
+      '0' => 'admin',
+      '1' => 'aegir administrator',
+      '2' => 'aegir platform manager',
+      '3' => 'root',
+    ),
+  );
+
+  // Exported permission: execute Platform: Unlock (hosting_platform_op_unlock)
+  $permissions['execute Platform: Unlock (hosting_platform_op_unlock)'] = array(
+    'name' => 'execute Platform: Unlock (hosting_platform_op_unlock)',
+    'roles' => array(
+      '0' => 'admin',
+      '1' => 'aegir administrator',
+      '2' => 'aegir platform manager',
+      '3' => 'root',
+    ),
+  );
+
+  // Exported permission: execute Platform: Verify (hosting_platform_op_verify)
+  $permissions['execute Platform: Verify (hosting_platform_op_verify)'] = array(
+    'name' => 'execute Platform: Verify (hosting_platform_op_verify)',
+    'roles' => array(
+      '0' => 'admin',
+      '1' => 'aegir administrator',
+      '2' => 'aegir platform manager',
+      '3' => 'root',
+    ),
+  );
+
+  // Exported permission: execute Promote post to front page (node_promote_action)
+  $permissions['execute Promote post to front page (node_promote_action)'] = array(
+    'name' => 'execute Promote post to front page (node_promote_action)',
+    'roles' => array(),
+  );
+
+  // Exported permission: execute Promote to front page (node_mass_update)
+  $permissions['execute Promote to front page (node_mass_update)'] = array(
+    'name' => 'execute Promote to front page (node_mass_update)',
+    'roles' => array(),
+  );
+
+  // Exported permission: execute Publish (node_mass_update)
+  $permissions['execute Publish (node_mass_update)'] = array(
+    'name' => 'execute Publish (node_mass_update)',
+    'roles' => array(),
+  );
+
+  // Exported permission: execute Publish comment (comment_publish_action)
+  $permissions['execute Publish comment (comment_publish_action)'] = array(
+    'name' => 'execute Publish comment (comment_publish_action)',
+    'roles' => array(),
+  );
+
+  // Exported permission: execute Publish post (node_publish_action)
+  $permissions['execute Publish post (node_publish_action)'] = array(
+    'name' => 'execute Publish post (node_publish_action)',
+    'roles' => array(),
+  );
+
+  // Exported permission: execute Redirect to URL (system_goto_action)
+  $permissions['execute Redirect to URL (system_goto_action)'] = array(
+    'name' => 'execute Redirect to URL (system_goto_action)',
+    'roles' => array(),
+  );
+
+  // Exported permission: execute Remove book page from outline (views_bulk_operations_remove_book_action)
+  $permissions['execute Remove book page from outline (views_bulk_operations_remove_book_action)'] = array(
+    'name' => 'execute Remove book page from outline (views_bulk_operations_remove_book_action)',
+    'roles' => array(),
+  );
+
+  // Exported permission: execute Remove post from front page (node_unpromote_action)
+  $permissions['execute Remove post from front page (node_unpromote_action)'] = array(
+    'name' => 'execute Remove post from front page (node_unpromote_action)',
+    'roles' => array(),
+  );
+
+  // Exported permission: execute Remove stickiness (node_mass_update)
+  $permissions['execute Remove stickiness (node_mass_update)'] = array(
+    'name' => 'execute Remove stickiness (node_mass_update)',
+    'roles' => array(),
+  );
+
+  // Exported permission: execute Save post (node_save_action)
+  $permissions['execute Save post (node_save_action)'] = array(
+    'name' => 'execute Save post (node_save_action)',
+    'roles' => array(),
+  );
+
+  // Exported permission: execute Send e-mail (system_send_email_action)
+  $permissions['execute Send e-mail (system_send_email_action)'] = array(
+    'name' => 'execute Send e-mail (system_send_email_action)',
+    'roles' => array(),
+  );
+
+  // Exported permission: execute Site: Backup (hosting_site_op_backup)
+  $permissions['execute Site: Backup (hosting_site_op_backup)'] = array(
+    'name' => 'execute Site: Backup (hosting_site_op_backup)',
+    'roles' => array(
+      '0' => 'admin',
+      '1' => 'aegir administrator',
+      '2' => 'aegir client',
+      '3' => 'root',
+    ),
+  );
+
+  // Exported permission: execute Site: Delete (hosting_site_op_delete)
+  $permissions['execute Site: Delete (hosting_site_op_delete)'] = array(
+    'name' => 'execute Site: Delete (hosting_site_op_delete)',
+    'roles' => array(
+      '0' => 'admin',
+      '1' => 'aegir administrator',
+      '2' => 'aegir platform manager',
+      '3' => 'root',
+    ),
+  );
+
+  // Exported permission: execute Site: Disable (hosting_site_op_disable)
+  $permissions['execute Site: Disable (hosting_site_op_disable)'] = array(
+    'name' => 'execute Site: Disable (hosting_site_op_disable)',
+    'roles' => array(
+      '0' => 'admin',
+      '1' => 'aegir administrator',
+      '2' => 'aegir client',
+      '3' => 'aegir platform manager',
+      '4' => 'root',
+    ),
+  );
+
+  // Exported permission: execute Site: Enable (hosting_site_op_enable)
+  $permissions['execute Site: Enable (hosting_site_op_enable)'] = array(
+    'name' => 'execute Site: Enable (hosting_site_op_enable)',
+    'roles' => array(
+      '0' => 'admin',
+      '1' => 'aegir administrator',
+      '2' => 'aegir client',
+      '3' => 'aegir platform manager',
+      '4' => 'root',
+    ),
+  );
+
+  // Exported permission: execute Site: Reset password (hosting_site_op_login_reset)
+  $permissions['execute Site: Reset password (hosting_site_op_login_reset)'] = array(
+    'name' => 'execute Site: Reset password (hosting_site_op_login_reset)',
+    'roles' => array(
+      '0' => 'admin',
+      '1' => 'aegir administrator',
+      '2' => 'aegir client',
+      '3' => 'root',
+    ),
+  );
+
+  // Exported permission: execute Site: Verify (hosting_site_op_verify)
+  $permissions['execute Site: Verify (hosting_site_op_verify)'] = array(
+    'name' => 'execute Site: Verify (hosting_site_op_verify)',
+    'roles' => array(
+      '0' => 'admin',
+      '1' => 'aegir administrator',
+      '2' => 'aegir client',
+      '3' => 'aegir platform manager',
+      '4' => 'root',
+    ),
+  );
+
+  // Exported permission: execute Unblock the selected users (user_user_operations_unblock)
+  $permissions['execute Unblock the selected users (user_user_operations_unblock)'] = array(
+    'name' => 'execute Unblock the selected users (user_user_operations_unblock)',
+    'roles' => array(),
+  );
+
+  // Exported permission: execute Unpublish (node_mass_update)
+  $permissions['execute Unpublish (node_mass_update)'] = array(
+    'name' => 'execute Unpublish (node_mass_update)',
+    'roles' => array(),
+  );
+
+  // Exported permission: execute Unpublish comment (comment_unpublish_action)
+  $permissions['execute Unpublish comment (comment_unpublish_action)'] = array(
+    'name' => 'execute Unpublish comment (comment_unpublish_action)',
+    'roles' => array(),
+  );
+
+  // Exported permission: execute Unpublish comment containing keyword(s) (comment_unpublish_by_keyword_action)
+  $permissions['execute Unpublish comment containing keyword(s) (comment_unpublish_by_keyword_action)'] = array(
+    'name' => 'execute Unpublish comment containing keyword(s) (comment_unpublish_by_keyword_action)',
+    'roles' => array(),
+  );
+
+  // Exported permission: execute Unpublish post (node_unpublish_action)
+  $permissions['execute Unpublish post (node_unpublish_action)'] = array(
+    'name' => 'execute Unpublish post (node_unpublish_action)',
+    'roles' => array(),
+  );
+
+  // Exported permission: execute Unpublish post containing keyword(s) (node_unpublish_by_keyword_action)
+  $permissions['execute Unpublish post containing keyword(s) (node_unpublish_by_keyword_action)'] = array(
+    'name' => 'execute Unpublish post containing keyword(s) (node_unpublish_by_keyword_action)',
+    'roles' => array(),
+  );
+
   // Exported permission: manage features
   $permissions['manage features'] = array(
     'name' => 'manage features',
@@ -688,6 +1072,24 @@ function aegir_custom_settings_user_default_permissions() {
   $permissions['mass delete revisions'] = array(
     'name' => 'mass delete revisions',
     'roles' => array(),
+  );
+
+  // Exported permission: post comments
+  $permissions['post comments'] = array(
+    'name' => 'post comments',
+    'roles' => array(
+      '0' => 'admin',
+      '1' => 'aegir account manager',
+    ),
+  );
+
+  // Exported permission: post comments without approval
+  $permissions['post comments without approval'] = array(
+    'name' => 'post comments without approval',
+    'roles' => array(
+      '0' => 'admin',
+      '1' => 'aegir account manager',
+    ),
   );
 
   // Exported permission: retry failed tasks
@@ -710,6 +1112,14 @@ function aegir_custom_settings_user_default_permissions() {
   $permissions['select different theme'] = array(
     'name' => 'select different theme',
     'roles' => array(),
+  );
+
+  // Exported permission: update status of tasks
+  $permissions['update status of tasks'] = array(
+    'name' => 'update status of tasks',
+    'roles' => array(
+      '0' => 'aegir administrator',
+    ),
   );
 
   // Exported permission: use PHP for block visibility
@@ -748,7 +1158,14 @@ function aegir_custom_settings_user_default_permissions() {
   // Exported permission: view package
   $permissions['view package'] = array(
     'name' => 'view package',
-    'roles' => array(),
+    'roles' => array(
+      '0' => 'admin',
+      '1' => 'aegir account manager',
+      '2' => 'aegir administrator',
+      '3' => 'aegir client',
+      '4' => 'aegir platform manager',
+      '5' => 'root',
+    ),
   );
 
   // Exported permission: view platform

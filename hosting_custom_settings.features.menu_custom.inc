@@ -3,7 +3,7 @@
 /**
  * Implementation of hook_menu_default_menu_custom().
  */
-function aegir_custom_settings_menu_default_menu_custom() {
+function hosting_custom_settings_menu_default_menu_custom() {
   $menus = array();
 
   // Exported menu: menu-administration

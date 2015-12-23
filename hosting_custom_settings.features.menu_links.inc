@@ -3,7 +3,7 @@
 /**
  * Implementation of hook_menu_default_menu_links().
  */
-function aegir_custom_settings_menu_default_menu_links() {
+function hosting_custom_settings_menu_default_menu_links() {
   $menu_links = array();
 
   // Exported menu link: menu-administration:admin/user/user
@@ -11,28 +11,10 @@ function aegir_custom_settings_menu_default_menu_links() {
     'menu_name' => 'menu-administration',
     'link_path' => 'admin/user/user',
     'router_path' => 'admin/user/user',
-    'link_title' => 'Manage Clients',
+    'link_title' => 'Manage Users',
     'options' => array(
       'attributes' => array(
-        'title' => 'Manage Clients and Users',
-      ),
-    ),
-    'module' => 'menu',
-    'hidden' => '0',
-    'external' => '0',
-    'has_children' => '0',
-    'expanded' => '0',
-    'weight' => '-50',
-  );
-  // Exported menu link: menu-administration:hosting/signup
-  $menu_links['menu-administration:hosting/signup'] = array(
-    'menu_name' => 'menu-administration',
-    'link_path' => 'hosting/signup',
-    'router_path' => 'hosting/signup',
-    'link_title' => 'Add Site and Client',
-    'options' => array(
-      'attributes' => array(
-        'title' => 'Add Site and Client',
+        'title' => 'Manage Users',
       ),
     ),
     'module' => 'menu',
@@ -42,30 +24,12 @@ function aegir_custom_settings_menu_default_menu_links() {
     'expanded' => '0',
     'weight' => '-48',
   );
-  // Exported menu link: menu-administration:node/add/client
-  $menu_links['menu-administration:node/add/client'] = array(
-    'menu_name' => 'menu-administration',
-    'link_path' => 'node/add/client',
-    'router_path' => 'node/add/client',
-    'link_title' => 'Add Client',
-    'options' => array(
-      'attributes' => array(
-        'title' => 'Add New Client',
-      ),
-    ),
-    'module' => 'menu',
-    'hidden' => '0',
-    'external' => '0',
-    'has_children' => '0',
-    'expanded' => '0',
-    'weight' => '-49',
-  );
   // Exported menu link: menu-administration:node/add/platform
   $menu_links['menu-administration:node/add/platform'] = array(
     'menu_name' => 'menu-administration',
     'link_path' => 'node/add/platform',
     'router_path' => 'node/add/platform',
-    'link_title' => 'Add Platform',
+    'link_title' => 'Add New Platform',
     'options' => array(
       'attributes' => array(
         'title' => 'Add New Platform',
@@ -76,7 +40,43 @@ function aegir_custom_settings_menu_default_menu_links() {
     'external' => '0',
     'has_children' => '0',
     'expanded' => '0',
-    'weight' => '-47',
+    'weight' => '-49',
+  );
+  // Exported menu link: menu-administration:node/add/site
+  $menu_links['menu-administration:node/add/site'] = array(
+    'menu_name' => 'menu-administration',
+    'link_path' => 'node/add/site',
+    'router_path' => 'node/add/site',
+    'link_title' => 'Add New Site',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Add New Site',
+      ),
+    ),
+    'module' => 'menu',
+    'hidden' => '0',
+    'external' => '0',
+    'has_children' => '0',
+    'expanded' => '0',
+    'weight' => '-50',
+  );
+  // Exported menu link: primary-links:hosting/clients
+  $menu_links['primary-links:hosting/clients'] = array(
+    'menu_name' => 'primary-links',
+    'link_path' => 'hosting/clients',
+    'router_path' => 'hosting/clients',
+    'link_title' => 'Clients',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'List of clients',
+      ),
+    ),
+    'module' => 'system',
+    'hidden' => '0',
+    'external' => '0',
+    'has_children' => '0',
+    'expanded' => '0',
+    'weight' => '0',
   );
   // Exported menu link: primary-links:hosting/platforms
   $menu_links['primary-links:hosting/platforms'] = array(
@@ -94,7 +94,7 @@ function aegir_custom_settings_menu_default_menu_links() {
     'external' => '0',
     'has_children' => '0',
     'expanded' => '0',
-    'weight' => '-47',
+    'weight' => '1',
   );
   // Exported menu link: primary-links:hosting/servers
   $menu_links['primary-links:hosting/servers'] = array(
@@ -112,7 +112,7 @@ function aegir_custom_settings_menu_default_menu_links() {
     'external' => '0',
     'has_children' => '0',
     'expanded' => '0',
-    'weight' => '-48',
+    'weight' => '0',
   );
   // Exported menu link: primary-links:hosting/sites
   $menu_links['primary-links:hosting/sites'] = array(
@@ -122,7 +122,7 @@ function aegir_custom_settings_menu_default_menu_links() {
     'link_title' => 'Sites',
     'options' => array(
       'attributes' => array(
-        'title' => 'Display a list of sites',
+        'title' => 'List of sites',
       ),
     ),
     'module' => 'system',
@@ -130,7 +130,7 @@ function aegir_custom_settings_menu_default_menu_links() {
     'external' => '0',
     'has_children' => '0',
     'expanded' => '0',
-    'weight' => '-46',
+    'weight' => '2',
   );
   // Exported menu link: primary-links:logout
   $menu_links['primary-links:logout'] = array(
@@ -149,24 +149,6 @@ function aegir_custom_settings_menu_default_menu_links() {
     'has_children' => '0',
     'expanded' => '0',
     'weight' => '-50',
-  );
-  // Exported menu link: primary-links:node/add/site
-  $menu_links['primary-links:node/add/site'] = array(
-    'menu_name' => 'primary-links',
-    'link_path' => 'node/add/site',
-    'router_path' => 'node/add/site',
-    'link_title' => 'Add Site',
-    'options' => array(
-      'attributes' => array(
-        'title' => 'Add New Site',
-      ),
-    ),
-    'module' => 'menu',
-    'hidden' => '0',
-    'external' => '0',
-    'has_children' => '0',
-    'expanded' => '0',
-    'weight' => '-45',
   );
   // Exported menu link: primary-links:user/%
   $menu_links['primary-links:user/%'] = array(
@@ -189,12 +171,11 @@ function aegir_custom_settings_menu_default_menu_links() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Account');
-  t('Add Client');
-  t('Add Platform');
-  t('Add Site');
-  t('Add Site and Client');
+  t('Add New Platform');
+  t('Add New Site');
+  t('Clients');
   t('Exit');
-  t('Manage Clients');
+  t('Manage Users');
   t('Platforms');
   t('Servers');
   t('Sites');

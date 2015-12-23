@@ -3,7 +3,7 @@
 /**
  * Implementation of hook_ctools_plugin_api().
  */
-function aegir_custom_settings_ctools_plugin_api() {
+function hosting_custom_settings_ctools_plugin_api() {
   list($module, $api) = func_get_args();
   if ($module == "strongarm" && $api == "strongarm") {
     return array("version" => 1);
@@ -13,7 +13,7 @@ function aegir_custom_settings_ctools_plugin_api() {
 /**
  * Implementation of hook_node_info().
  */
-function aegir_custom_settings_node_info() {
+function hosting_custom_settings_node_info() {
   $items = array(
     'book' => array(
       'name' => t('Book page'),
