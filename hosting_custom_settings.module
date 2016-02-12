@@ -1,3 +1,7 @@
 <?php
+/**
+ * @file
+ * Code for the Hosting Custom Settings feature.
+ */
 
-include_once('hosting_custom_settings.features.inc');
+include_once 'hosting_custom_settings.features.inc';

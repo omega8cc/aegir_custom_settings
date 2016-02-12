@@ -1,68 +1,18 @@
 <?php
+/**
+ * @file
+ * hosting_custom_settings.features.menu_links.inc
+ */
 
 /**
- * Implementation of hook_menu_default_menu_links().
+ * Implements hook_menu_default_menu_links().
  */
 function hosting_custom_settings_menu_default_menu_links() {
   $menu_links = array();
 
-  // Exported menu link: menu-administration:admin/user/user
-  $menu_links['menu-administration:admin/user/user'] = array(
-    'menu_name' => 'menu-administration',
-    'link_path' => 'admin/user/user',
-    'router_path' => 'admin/user/user',
-    'link_title' => 'Manage Users',
-    'options' => array(
-      'attributes' => array(
-        'title' => 'Manage Users',
-      ),
-    ),
-    'module' => 'menu',
-    'hidden' => '0',
-    'external' => '0',
-    'has_children' => '0',
-    'expanded' => '0',
-    'weight' => '-48',
-  );
-  // Exported menu link: menu-administration:node/add/platform
-  $menu_links['menu-administration:node/add/platform'] = array(
-    'menu_name' => 'menu-administration',
-    'link_path' => 'node/add/platform',
-    'router_path' => 'node/add/platform',
-    'link_title' => 'Add New Platform',
-    'options' => array(
-      'attributes' => array(
-        'title' => 'Add New Platform',
-      ),
-    ),
-    'module' => 'menu',
-    'hidden' => '0',
-    'external' => '0',
-    'has_children' => '0',
-    'expanded' => '0',
-    'weight' => '-49',
-  );
-  // Exported menu link: menu-administration:node/add/site
-  $menu_links['menu-administration:node/add/site'] = array(
-    'menu_name' => 'menu-administration',
-    'link_path' => 'node/add/site',
-    'router_path' => 'node/add/site',
-    'link_title' => 'Add New Site',
-    'options' => array(
-      'attributes' => array(
-        'title' => 'Add New Site',
-      ),
-    ),
-    'module' => 'menu',
-    'hidden' => '0',
-    'external' => '0',
-    'has_children' => '0',
-    'expanded' => '0',
-    'weight' => '-50',
-  );
-  // Exported menu link: primary-links:hosting/clients
-  $menu_links['primary-links:hosting/clients'] = array(
-    'menu_name' => 'primary-links',
+  // Exported menu link: main-menu_clients:hosting/clients.
+  $menu_links['main-menu_clients:hosting/clients'] = array(
+    'menu_name' => 'main-menu',
     'link_path' => 'hosting/clients',
     'router_path' => 'hosting/clients',
     'link_title' => 'Clients',
@@ -70,17 +20,19 @@ function hosting_custom_settings_menu_default_menu_links() {
       'attributes' => array(
         'title' => 'List of clients',
       ),
+      'identifier' => 'main-menu_clients:hosting/clients',
     ),
     'module' => 'system',
-    'hidden' => '0',
-    'external' => '0',
-    'has_children' => '0',
-    'expanded' => '0',
-    'weight' => '0',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => 5,
+    'customized' => 0,
   );
-  // Exported menu link: primary-links:hosting/platforms
-  $menu_links['primary-links:hosting/platforms'] = array(
-    'menu_name' => 'primary-links',
+  // Exported menu link: main-menu_platforms:hosting/platforms.
+  $menu_links['main-menu_platforms:hosting/platforms'] = array(
+    'menu_name' => 'main-menu',
     'link_path' => 'hosting/platforms',
     'router_path' => 'hosting/platforms',
     'link_title' => 'Platforms',
@@ -88,17 +40,19 @@ function hosting_custom_settings_menu_default_menu_links() {
       'attributes' => array(
         'title' => 'List of platforms',
       ),
+      'identifier' => 'main-menu_platforms:hosting/platforms',
     ),
     'module' => 'system',
-    'hidden' => '0',
-    'external' => '0',
-    'has_children' => '0',
-    'expanded' => '0',
-    'weight' => '1',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => 2,
+    'customized' => 0,
   );
-  // Exported menu link: primary-links:hosting/servers
-  $menu_links['primary-links:hosting/servers'] = array(
-    'menu_name' => 'primary-links',
+  // Exported menu link: main-menu_servers:hosting/servers.
+  $menu_links['main-menu_servers:hosting/servers'] = array(
+    'menu_name' => 'main-menu',
     'link_path' => 'hosting/servers',
     'router_path' => 'hosting/servers',
     'link_title' => 'Servers',
@@ -106,17 +60,19 @@ function hosting_custom_settings_menu_default_menu_links() {
       'attributes' => array(
         'title' => 'List of servers',
       ),
+      'identifier' => 'main-menu_servers:hosting/servers',
     ),
     'module' => 'system',
-    'hidden' => '0',
-    'external' => '0',
-    'has_children' => '0',
-    'expanded' => '0',
-    'weight' => '0',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => 4,
+    'customized' => 1,
   );
-  // Exported menu link: primary-links:hosting/sites
-  $menu_links['primary-links:hosting/sites'] = array(
-    'menu_name' => 'primary-links',
+  // Exported menu link: main-menu_sites:hosting/sites.
+  $menu_links['main-menu_sites:hosting/sites'] = array(
+    'menu_name' => 'main-menu',
     'link_path' => 'hosting/sites',
     'router_path' => 'hosting/sites',
     'link_title' => 'Sites',
@@ -124,62 +80,128 @@ function hosting_custom_settings_menu_default_menu_links() {
       'attributes' => array(
         'title' => 'List of sites',
       ),
+      'identifier' => 'main-menu_sites:hosting/sites',
     ),
     'module' => 'system',
-    'hidden' => '0',
-    'external' => '0',
-    'has_children' => '0',
-    'expanded' => '0',
-    'weight' => '2',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => 1,
+    'customized' => 0,
   );
-  // Exported menu link: primary-links:logout
-  $menu_links['primary-links:logout'] = array(
-    'menu_name' => 'primary-links',
-    'link_path' => 'logout',
-    'router_path' => 'logout',
+  // Exported menu link: main-menu_tasks:hosting/tasks.
+  $menu_links['main-menu_tasks:hosting/tasks'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'hosting/tasks',
+    'router_path' => 'hosting/tasks',
+    'link_title' => 'Tasks',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'A list of all queued and run tasks.',
+      ),
+      'identifier' => 'main-menu_tasks:hosting/tasks',
+    ),
+    'module' => 'system',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => 3,
+    'customized' => 0,
+  );
+  // Exported menu link: menu-administration_add-new-platform:node/add/platform.
+  $menu_links['menu-administration_add-new-platform:node/add/platform'] = array(
+    'menu_name' => 'menu-administration',
+    'link_path' => 'node/add/platform',
+    'router_path' => 'node/add/platform',
+    'link_title' => 'Add New Platform',
+    'options' => array(
+      'attributes' => array(
+        'title' => '',
+      ),
+      'identifier' => 'menu-administration_add-new-platform:node/add/platform',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -49,
+    'customized' => 1,
+  );
+  // Exported menu link: menu-administration_add-new-site:node/add/site.
+  $menu_links['menu-administration_add-new-site:node/add/site'] = array(
+    'menu_name' => 'menu-administration',
+    'link_path' => 'node/add/site',
+    'router_path' => 'node/add/site',
+    'link_title' => 'Add New Site',
+    'options' => array(
+      'attributes' => array(
+        'title' => '',
+      ),
+      'identifier' => 'menu-administration_add-new-site:node/add/site',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -50,
+    'customized' => 1,
+  );
+  // Exported menu link: menu-administration_exit:user/logout.
+  $menu_links['menu-administration_exit:user/logout'] = array(
+    'menu_name' => 'menu-administration',
+    'link_path' => 'user/logout',
+    'router_path' => 'user/logout',
     'link_title' => 'Exit',
     'options' => array(
       'attributes' => array(
-        'title' => 'Log out',
+        'title' => '',
       ),
+      'identifier' => 'menu-administration_exit:user/logout',
     ),
-    'module' => 'system',
-    'hidden' => '0',
-    'external' => '0',
-    'has_children' => '0',
-    'expanded' => '0',
-    'weight' => '-50',
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => 1,
+    'customized' => 1,
   );
-  // Exported menu link: primary-links:user/%
-  $menu_links['primary-links:user/%'] = array(
-    'menu_name' => 'primary-links',
-    'link_path' => 'user/%',
-    'router_path' => 'user/%',
-    'link_title' => 'Account',
+  // Exported menu link: menu-administration_my-account:user.
+  $menu_links['menu-administration_my-account:user'] = array(
+    'menu_name' => 'menu-administration',
+    'link_path' => 'user',
+    'router_path' => 'user',
+    'link_title' => 'My Account',
     'options' => array(
       'attributes' => array(
-        'title' => 'My Account',
+        'title' => '',
       ),
+      'identifier' => 'menu-administration_my-account:user',
     ),
-    'module' => 'system',
-    'hidden' => '0',
-    'external' => '0',
-    'has_children' => '0',
-    'expanded' => '0',
-    'weight' => '-49',
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => 0,
+    'customized' => 1,
   );
+
   // Translatables
   // Included for use with string extractors like potx.
-  t('Account');
   t('Add New Platform');
   t('Add New Site');
   t('Clients');
   t('Exit');
-  t('Manage Users');
+  t('My Account');
   t('Platforms');
   t('Servers');
   t('Sites');
-
+  t('Tasks');
 
   return $menu_links;
 }
