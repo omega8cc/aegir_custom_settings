@@ -100,7 +100,6 @@ features[user_permission][] = change own e-mail
 features[user_permission][] = change own openid
 features[user_permission][] = change own password
 features[user_permission][] = change own username
-features[user_permission][] = configure site cron interval
 features[user_permission][] = create backup task
 features[user_permission][] = create backup-delete task
 features[user_permission][] = create book content

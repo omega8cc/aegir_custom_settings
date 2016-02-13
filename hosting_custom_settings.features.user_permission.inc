@@ -446,18 +446,6 @@ function hosting_custom_settings_user_default_permissions() {
     'module' => 'user',
   );
 
-  // Exported permission: 'configure site cron interval'.
-  $permissions['configure site cron interval'] = array(
-    'name' => 'configure site cron interval',
-    'roles' => array(
-      'admin' => 'admin',
-      'aegir account manager' => 'aegir account manager',
-      'aegir client' => 'aegir client',
-      'root' => 'root',
-    ),
-    'module' => 'hosting_advanced_cron',
-  );
-
   // Exported permission: 'create backup task'.
   $permissions['create backup task'] = array(
     'name' => 'create backup task',
