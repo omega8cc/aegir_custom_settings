@@ -101,6 +101,13 @@ function hosting_custom_settings_user_default_permissions() {
     'module' => 'hosting',
   );
 
+  // Exported permission: 'access overlay'.
+  $permissions['access overlay'] = array(
+    'name' => 'access overlay',
+    'roles' => array(),
+    'module' => 'overlay',
+  );
+
   // Exported permission: 'access printer-friendly version'.
   $permissions['access printer-friendly version'] = array(
     'name' => 'access printer-friendly version',
@@ -707,6 +714,17 @@ function hosting_custom_settings_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'create site_health_check task'.
+  $permissions['create site_health_check task'] = array(
+    'name' => 'create site_health_check task',
+    'roles' => array(
+      'admin' => 'admin',
+      'aegir client' => 'aegir client',
+      'root' => 'root',
+    ),
+    'module' => 'hosting_tasks_extra',
+  );
+
   // Exported permission: 'create sites on locked platforms'.
   $permissions['create sites on locked platforms'] = array(
     'name' => 'create sites on locked platforms',
@@ -1159,6 +1177,13 @@ function hosting_custom_settings_user_default_permissions() {
     'module' => 'actions_permissions',
   );
 
+  // Exported permission: 'execute hosting_server_flush_drush_cache_action'.
+  $permissions['execute hosting_server_flush_drush_cache_action'] = array(
+    'name' => 'execute hosting_server_flush_drush_cache_action',
+    'roles' => array(),
+    'module' => 'actions_permissions',
+  );
+
   // Exported permission: 'execute hosting_site_backup_action'.
   $permissions['execute hosting_site_backup_action'] = array(
     'name' => 'execute hosting_site_backup_action',
@@ -1183,6 +1208,27 @@ function hosting_custom_settings_user_default_permissions() {
   // Exported permission: 'execute hosting_site_enable_action'.
   $permissions['execute hosting_site_enable_action'] = array(
     'name' => 'execute hosting_site_enable_action',
+    'roles' => array(),
+    'module' => 'actions_permissions',
+  );
+
+  // Exported permission: 'execute hosting_site_flush_cache_action'.
+  $permissions['execute hosting_site_flush_cache_action'] = array(
+    'name' => 'execute hosting_site_flush_cache_action',
+    'roles' => array(),
+    'module' => 'actions_permissions',
+  );
+
+  // Exported permission: 'execute hosting_site_rebuild_registry_action'.
+  $permissions['execute hosting_site_rebuild_registry_action'] = array(
+    'name' => 'execute hosting_site_rebuild_registry_action',
+    'roles' => array(),
+    'module' => 'actions_permissions',
+  );
+
+  // Exported permission: 'execute hosting_site_update_action'.
+  $permissions['execute hosting_site_update_action'] = array(
+    'name' => 'execute hosting_site_update_action',
     'roles' => array(),
     'module' => 'actions_permissions',
   );

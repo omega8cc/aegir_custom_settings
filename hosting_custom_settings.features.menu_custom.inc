@@ -22,11 +22,19 @@ function hosting_custom_settings_menu_default_menu_custom() {
     'title' => 'Administration',
     'description' => '',
   );
+  // Exported menu: user-menu.
+  $menus['user-menu'] = array(
+    'menu_name' => 'user-menu',
+    'title' => 'User Menu',
+    'description' => 'The <em>User</em> menu contains links related to the user\'s account, as well as the \'Log out\' link.',
+  );
   // Translatables
   // Included for use with string extractors like potx.
   t('Administration');
   t('Main menu');
   t('Primary links are often used at the theme layer to show the major sections of a site. A typical representation for primary links would be tabs along the top.');
+  t('The <em>User</em> menu contains links related to the user\'s account, as well as the \'Log out\' link.');
+  t('User Menu');
 
   return $menus;
 }
