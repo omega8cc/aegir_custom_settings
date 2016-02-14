@@ -104,7 +104,9 @@ function hosting_custom_settings_user_default_permissions() {
   // Exported permission: 'access overlay'.
   $permissions['access overlay'] = array(
     'name' => 'access overlay',
-    'roles' => array(),
+    'roles' => array(
+      'authenticated user' => 'authenticated user',
+    ),
     'module' => 'overlay',
   );
 
@@ -451,6 +453,20 @@ function hosting_custom_settings_user_default_permissions() {
       'root' => 'root',
     ),
     'module' => 'user',
+  );
+
+  // Exported permission: 'configure site cron interval'.
+  $permissions['configure site cron interval'] = array(
+    'name' => 'configure site cron interval',
+    'roles' => array(
+      'admin' => 'admin',
+      'aegir account manager' => 'aegir account manager',
+      'aegir administrator' => 'aegir administrator',
+      'aegir client' => 'aegir client',
+      'authenticated user' => 'authenticated user',
+      'root' => 'root',
+    ),
+    'module' => 'hosting_advanced_cron',
   );
 
   // Exported permission: 'create backup task'.
