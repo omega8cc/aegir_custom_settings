@@ -13,7 +13,6 @@ dependencies[] = fe_block
 dependencies[] = features
 dependencies[] = filter
 dependencies[] = hosting
-dependencies[] = hosting_advanced_cron
 dependencies[] = hosting_alias
 dependencies[] = hosting_client
 dependencies[] = hosting_clone

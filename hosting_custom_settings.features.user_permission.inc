@@ -466,7 +466,7 @@ function hosting_custom_settings_user_default_permissions() {
       'authenticated user' => 'authenticated user',
       'root' => 'root',
     ),
-    'module' => 'hosting_advanced_cron',
+    'module' => 'hosting_cron',
   );
 
   // Exported permission: 'create backup task'.
