@@ -18,7 +18,7 @@ function hosting_custom_settings_menu_default_menu_links() {
     'link_title' => 'Clients',
     'options' => array(
       'attributes' => array(
-        'title' => 'List of clients',
+        'title' => 'List of Clients',
       ),
       'identifier' => 'main-menu_clients:hosting/clients',
     ),
@@ -28,7 +28,7 @@ function hosting_custom_settings_menu_default_menu_links() {
     'has_children' => 0,
     'expanded' => 0,
     'weight' => 5,
-    'customized' => 0,
+    'customized' => 1,
   );
   // Exported menu link: main-menu_platforms:hosting/platforms.
   $menu_links['main-menu_platforms:hosting/platforms'] = array(
@@ -38,7 +38,7 @@ function hosting_custom_settings_menu_default_menu_links() {
     'link_title' => 'Platforms',
     'options' => array(
       'attributes' => array(
-        'title' => 'List of platforms',
+        'title' => 'List of Platforms',
       ),
       'identifier' => 'main-menu_platforms:hosting/platforms',
     ),
@@ -48,7 +48,7 @@ function hosting_custom_settings_menu_default_menu_links() {
     'has_children' => 0,
     'expanded' => 0,
     'weight' => 2,
-    'customized' => 0,
+    'customized' => 1,
   );
   // Exported menu link: main-menu_servers:hosting/servers.
   $menu_links['main-menu_servers:hosting/servers'] = array(
@@ -58,7 +58,7 @@ function hosting_custom_settings_menu_default_menu_links() {
     'link_title' => 'Servers',
     'options' => array(
       'attributes' => array(
-        'title' => 'List of servers',
+        'title' => 'List of Servers',
       ),
       'identifier' => 'main-menu_servers:hosting/servers',
     ),
@@ -78,7 +78,7 @@ function hosting_custom_settings_menu_default_menu_links() {
     'link_title' => 'Sites',
     'options' => array(
       'attributes' => array(
-        'title' => 'List of sites',
+        'title' => 'List of Sites',
       ),
       'identifier' => 'main-menu_sites:hosting/sites',
     ),
@@ -88,7 +88,7 @@ function hosting_custom_settings_menu_default_menu_links() {
     'has_children' => 0,
     'expanded' => 0,
     'weight' => 1,
-    'customized' => 0,
+    'customized' => 1,
   );
   // Exported menu link: main-menu_tasks:hosting/tasks.
   $menu_links['main-menu_tasks:hosting/tasks'] = array(
@@ -98,7 +98,7 @@ function hosting_custom_settings_menu_default_menu_links() {
     'link_title' => 'Tasks',
     'options' => array(
       'attributes' => array(
-        'title' => 'A list of all queued and run tasks.',
+        'title' => 'List of Tasks',
       ),
       'identifier' => 'main-menu_tasks:hosting/tasks',
     ),
@@ -108,7 +108,7 @@ function hosting_custom_settings_menu_default_menu_links() {
     'has_children' => 0,
     'expanded' => 0,
     'weight' => 3,
-    'customized' => 0,
+    'customized' => 1,
   );
   // Exported menu link: menu-administration_add-new-platform:node/add/platform.
   $menu_links['menu-administration_add-new-platform:node/add/platform'] = array(
