@@ -391,6 +391,34 @@ function hosting_custom_settings_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'hosting_queue_backup_gc_enabled';
+  $strongarm->value = 1;
+  $export['hosting_queue_backup_gc_enabled'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'hosting_queue_cron_enabled';
+  $strongarm->value = 1;
+  $export['hosting_queue_cron_enabled'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'hosting_queue_tasks_enabled';
+  $strongarm->value = 1;
+  $export['hosting_queue_tasks_enabled'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'hosting_queue_task_gc_enabled';
+  $strongarm->value = 1;
+  $export['hosting_queue_task_gc_enabled'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'menu_options_book';
   $strongarm->value = array();
   $export['menu_options_book'] = $strongarm;
