@@ -1168,7 +1168,12 @@ function hosting_custom_settings_user_default_permissions() {
   // Exported permission: 'execute hosting_platform_delete_action'.
   $permissions['execute hosting_platform_delete_action'] = array(
     'name' => 'execute hosting_platform_delete_action',
-    'roles' => array(),
+    'roles' => array(
+      'admin' => 'admin',
+      'aegir administrator' => 'aegir administrator',
+      'aegir platform manager' => 'aegir platform manager',
+      'root' => 'root',
+    ),
     'module' => 'actions_permissions',
   );
 
@@ -1189,7 +1194,12 @@ function hosting_custom_settings_user_default_permissions() {
   // Exported permission: 'execute hosting_platform_verify_action'.
   $permissions['execute hosting_platform_verify_action'] = array(
     'name' => 'execute hosting_platform_verify_action',
-    'roles' => array(),
+    'roles' => array(
+      'admin' => 'admin',
+      'aegir administrator' => 'aegir administrator',
+      'aegir platform manager' => 'aegir platform manager',
+      'root' => 'root',
+    ),
     'module' => 'actions_permissions',
   );
 
@@ -1210,21 +1220,35 @@ function hosting_custom_settings_user_default_permissions() {
   // Exported permission: 'execute hosting_site_delete_action'.
   $permissions['execute hosting_site_delete_action'] = array(
     'name' => 'execute hosting_site_delete_action',
-    'roles' => array(),
+    'roles' => array(
+      'admin' => 'admin',
+      'aegir administrator' => 'aegir administrator',
+      'root' => 'root',
+    ),
     'module' => 'actions_permissions',
   );
 
   // Exported permission: 'execute hosting_site_disable_action'.
   $permissions['execute hosting_site_disable_action'] = array(
     'name' => 'execute hosting_site_disable_action',
-    'roles' => array(),
+    'roles' => array(
+      'admin' => 'admin',
+      'aegir administrator' => 'aegir administrator',
+      'aegir client' => 'aegir client',
+      'root' => 'root',
+    ),
     'module' => 'actions_permissions',
   );
 
   // Exported permission: 'execute hosting_site_enable_action'.
   $permissions['execute hosting_site_enable_action'] = array(
     'name' => 'execute hosting_site_enable_action',
-    'roles' => array(),
+    'roles' => array(
+      'admin' => 'admin',
+      'aegir administrator' => 'aegir administrator',
+      'aegir client' => 'aegir client',
+      'root' => 'root',
+    ),
     'module' => 'actions_permissions',
   );
 
@@ -1252,7 +1276,12 @@ function hosting_custom_settings_user_default_permissions() {
   // Exported permission: 'execute hosting_site_verify_action'.
   $permissions['execute hosting_site_verify_action'] = array(
     'name' => 'execute hosting_site_verify_action',
-    'roles' => array(),
+    'roles' => array(
+      'admin' => 'admin',
+      'aegir administrator' => 'aegir administrator',
+      'aegir client' => 'aegir client',
+      'root' => 'root',
+    ),
     'module' => 'actions_permissions',
   );
 
