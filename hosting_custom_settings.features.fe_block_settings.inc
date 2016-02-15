@@ -54,5 +54,45 @@ function hosting_custom_settings_default_fe_block_settings() {
     'visibility' => 0,
   );
 
+  $export['views-hosting_site_list-block_sites'] = array(
+    'cache' => -1,
+    'custom' => 0,
+    'delta' => 'hosting_site_list-block_sites',
+    'module' => 'views',
+    'node_types' => array(),
+    'pages' => 'hosting/c/platform_*',
+    'roles' => array(),
+    'themes' => array(
+      'eldir' => array(
+        'region' => 'content_bottom',
+        'status' => 1,
+        'theme' => 'eldir',
+        'weight' => 0,
+      ),
+    ),
+    'title' => '',
+    'visibility' => 1,
+  );
+
+  $export['views-hosting_task_list-block'] = array(
+    'cache' => -1,
+    'custom' => 0,
+    'delta' => 'hosting_task_list-block',
+    'module' => 'views',
+    'node_types' => array(),
+    'pages' => '',
+    'roles' => array(),
+    'themes' => array(
+      'eldir' => array(
+        'region' => 'sidebar_second',
+        'status' => 1,
+        'theme' => 'eldir',
+        'weight' => 0,
+      ),
+    ),
+    'title' => '',
+    'visibility' => 0,
+  );
+
   return $export;
 }
