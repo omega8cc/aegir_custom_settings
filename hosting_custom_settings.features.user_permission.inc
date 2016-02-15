@@ -1170,6 +1170,7 @@ function hosting_custom_settings_user_default_permissions() {
     'name' => 'execute hosting_platform_delete_action',
     'roles' => array(
       'admin' => 'admin',
+      'aegir account manager' => 'aegir account manager',
       'aegir administrator' => 'aegir administrator',
       'aegir platform manager' => 'aegir platform manager',
       'root' => 'root',
@@ -1196,6 +1197,7 @@ function hosting_custom_settings_user_default_permissions() {
     'name' => 'execute hosting_platform_verify_action',
     'roles' => array(
       'admin' => 'admin',
+      'aegir account manager' => 'aegir account manager',
       'aegir administrator' => 'aegir administrator',
       'aegir platform manager' => 'aegir platform manager',
       'root' => 'root',
@@ -1222,6 +1224,7 @@ function hosting_custom_settings_user_default_permissions() {
     'name' => 'execute hosting_site_delete_action',
     'roles' => array(
       'admin' => 'admin',
+      'aegir account manager' => 'aegir account manager',
       'aegir administrator' => 'aegir administrator',
       'root' => 'root',
     ),
@@ -1233,6 +1236,7 @@ function hosting_custom_settings_user_default_permissions() {
     'name' => 'execute hosting_site_disable_action',
     'roles' => array(
       'admin' => 'admin',
+      'aegir account manager' => 'aegir account manager',
       'aegir administrator' => 'aegir administrator',
       'aegir client' => 'aegir client',
       'root' => 'root',
@@ -1245,6 +1249,7 @@ function hosting_custom_settings_user_default_permissions() {
     'name' => 'execute hosting_site_enable_action',
     'roles' => array(
       'admin' => 'admin',
+      'aegir account manager' => 'aegir account manager',
       'aegir administrator' => 'aegir administrator',
       'aegir client' => 'aegir client',
       'root' => 'root',
@@ -1278,6 +1283,7 @@ function hosting_custom_settings_user_default_permissions() {
     'name' => 'execute hosting_site_verify_action',
     'roles' => array(
       'admin' => 'admin',
+      'aegir account manager' => 'aegir account manager',
       'aegir administrator' => 'aegir administrator',
       'aegir client' => 'aegir client',
       'root' => 'root',
