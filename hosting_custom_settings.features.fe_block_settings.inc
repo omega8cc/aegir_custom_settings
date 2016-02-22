@@ -54,6 +54,26 @@ function hosting_custom_settings_default_fe_block_settings() {
     'visibility' => 0,
   );
 
+  $export['system-user-menu'] = array(
+    'cache' => -1,
+    'custom' => 0,
+    'delta' => 'user-menu',
+    'module' => 'system',
+    'node_types' => array(),
+    'pages' => '',
+    'roles' => array(),
+    'themes' => array(
+      'eldir' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'eldir',
+        'weight' => -10,
+      ),
+    ),
+    'title' => '',
+    'visibility' => 0,
+  );
+
   $export['views-hosting_site_list-block_sites'] = array(
     'cache' => -1,
     'custom' => 0,
