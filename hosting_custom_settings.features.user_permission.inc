@@ -1239,6 +1239,7 @@ function hosting_custom_settings_user_default_permissions() {
       'aegir account manager' => 'aegir account manager',
       'aegir administrator' => 'aegir administrator',
       'aegir client' => 'aegir client',
+      'aegir platform manager' => 'aegir platform manager',
       'root' => 'root',
     ),
     'module' => 'actions_permissions',
@@ -1252,6 +1253,7 @@ function hosting_custom_settings_user_default_permissions() {
       'aegir account manager' => 'aegir account manager',
       'aegir administrator' => 'aegir administrator',
       'aegir client' => 'aegir client',
+      'aegir platform manager' => 'aegir platform manager',
       'root' => 'root',
     ),
     'module' => 'actions_permissions',
@@ -1286,6 +1288,7 @@ function hosting_custom_settings_user_default_permissions() {
       'aegir account manager' => 'aegir account manager',
       'aegir administrator' => 'aegir administrator',
       'aegir client' => 'aegir client',
+      'aegir platform manager' => 'aegir platform manager',
       'root' => 'root',
     ),
     'module' => 'actions_permissions',
@@ -1555,16 +1558,16 @@ function hosting_custom_settings_user_default_permissions() {
     'module' => 'ctools',
   );
 
-  // Exported permission: 'use text format 1'.
-  $permissions['use text format 1'] = array(
-    'name' => 'use text format 1',
+  // Exported permission: 'use text format filtered_html'.
+  $permissions['use text format filtered_html'] = array(
+    'name' => 'use text format filtered_html',
     'roles' => array(),
     'module' => 'filter',
   );
 
-  // Exported permission: 'use text format 2'.
-  $permissions['use text format 2'] = array(
-    'name' => 'use text format 2',
+  // Exported permission: 'use text format full_html'.
+  $permissions['use text format full_html'] = array(
+    'name' => 'use text format full_html',
     'roles' => array(),
     'module' => 'filter',
   );
