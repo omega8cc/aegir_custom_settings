@@ -1558,20 +1558,6 @@ function hosting_custom_settings_user_default_permissions() {
     'module' => 'ctools',
   );
 
-  // Exported permission: 'use text format filtered_html'.
-  $permissions['use text format filtered_html'] = array(
-    'name' => 'use text format filtered_html',
-    'roles' => array(),
-    'module' => 'filter',
-  );
-
-  // Exported permission: 'use text format full_html'.
-  $permissions['use text format full_html'] = array(
-    'name' => 'use text format full_html',
-    'roles' => array(),
-    'module' => 'filter',
-  );
-
   // Exported permission: 'view client'.
   $permissions['view client'] = array(
     'name' => 'view client',
