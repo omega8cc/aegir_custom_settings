@@ -12,66 +12,6 @@ function hosting_custom_settings_default_fe_block_settings() {
 
   $export['version'] = '2.0';
 
-  $export['hosting-hosting_queues'] = array(
-    'cache' => -1,
-    'custom' => 0,
-    'delta' => 'hosting_queues',
-    'module' => 'hosting',
-    'node_types' => array(),
-    'pages' => '',
-    'roles' => array(),
-    'themes' => array(
-      'eldir' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'eldir',
-        'weight' => -2,
-      ),
-    ),
-    'title' => '',
-    'visibility' => 0,
-  );
-
-  $export['hosting-hosting_queues_summary'] = array(
-    'cache' => 'BLOCK_NO_CACHE',
-    'custom' => 0,
-    'delta' => 'hosting_queues_summary',
-    'module' => 'hosting',
-    'node_types' => array(),
-    'pages' => '',
-    'roles' => array(),
-    'themes' => array(
-      'eldir' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'eldir',
-        'weight' => 1,
-      ),
-    ),
-    'title' => '',
-    'visibility' => 0,
-  );
-
-  $export['hosting-hosting_summary'] = array(
-    'cache' => 1,
-    'custom' => 0,
-    'delta' => 'hosting_summary',
-    'module' => 'hosting',
-    'node_types' => array(),
-    'pages' => '',
-    'roles' => array(),
-    'themes' => array(
-      'eldir' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'eldir',
-        'weight' => 10,
-      ),
-    ),
-    'title' => '',
-    'visibility' => 0,
-  );
-
   $export['hosting-hosting_supporting_aegir'] = array(
     'cache' => 1,
     'custom' => 0,
@@ -108,26 +48,6 @@ function hosting_custom_settings_default_fe_block_settings() {
         'status' => 1,
         'theme' => 'eldir',
         'weight' => -1,
-      ),
-    ),
-    'title' => '',
-    'visibility' => 0,
-  );
-
-  $export['system-navigation'] = array(
-    'cache' => -1,
-    'custom' => 0,
-    'delta' => 'navigation',
-    'module' => 'system',
-    'node_types' => array(),
-    'pages' => '',
-    'roles' => array(),
-    'themes' => array(
-      'eldir' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'eldir',
-        'weight' => 0,
       ),
     ),
     'title' => '',
