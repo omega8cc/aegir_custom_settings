@@ -12,84 +12,24 @@ function hosting_custom_settings_default_fe_block_settings() {
 
   $export['version'] = '2.0';
 
-  $export['hosting-hosting_queues'] = array(
-    'cache' => -1,
-    'custom' => 0,
-    'delta' => 'hosting_queues',
-    'module' => 'hosting',
-    'node_types' => array(),
-    'pages' => '',
-    'roles' => array(),
-    'themes' => array(
-      'eldir' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'eldir',
-        'weight' => -12,
-      ),
-    ),
-    'title' => '',
-    'visibility' => 0,
-  );
-
-  $export['hosting-hosting_queues_summary'] = array(
-    'cache' => 'BLOCK_NO_CACHE',
-    'custom' => 0,
-    'delta' => 'hosting_queues_summary',
-    'module' => 'hosting',
-    'node_types' => array(),
-    'pages' => '',
-    'roles' => array(),
-    'themes' => array(
-      'eldir' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'eldir',
-        'weight' => -10,
-      ),
-    ),
-    'title' => '',
-    'visibility' => 0,
-  );
-
-  $export['hosting-hosting_summary'] = array(
-    'cache' => 1,
-    'custom' => 0,
-    'delta' => 'hosting_summary',
-    'module' => 'hosting',
-    'node_types' => array(),
-    'pages' => '',
-    'roles' => array(),
-    'themes' => array(
-      'eldir' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'eldir',
-        'weight' => -9,
-      ),
-    ),
-    'title' => '',
-    'visibility' => 0,
-  );
-
   $export['hosting-hosting_supporting_aegir'] = array(
     'cache' => 1,
     'custom' => 0,
     'delta' => 'hosting_supporting_aegir',
     'module' => 'hosting',
     'node_types' => array(),
-    'pages' => '<front>',
+    'pages' => '',
     'roles' => array(),
     'themes' => array(
       'eldir' => array(
         'region' => 'sidebar_second',
         'status' => 1,
         'theme' => 'eldir',
-        'weight' => -10,
+        'weight' => 1,
       ),
     ),
     'title' => '',
-    'visibility' => 1,
+    'visibility' => 0,
   );
 
   $export['menu-menu-administration'] = array(
@@ -104,10 +44,10 @@ function hosting_custom_settings_default_fe_block_settings() {
     ),
     'themes' => array(
       'eldir' => array(
-        'region' => 'sidebar_first',
+        'region' => 'sidebar_second',
         'status' => 1,
         'theme' => 'eldir',
-        'weight' => -11,
+        'weight' => -1,
       ),
     ),
     'title' => '',
@@ -127,27 +67,7 @@ function hosting_custom_settings_default_fe_block_settings() {
         'region' => '',
         'status' => 0,
         'theme' => 'eldir',
-        'weight' => -10,
-      ),
-    ),
-    'title' => '',
-    'visibility' => 0,
-  );
-
-  $export['system-powered-by'] = array(
-    'cache' => -1,
-    'custom' => 0,
-    'delta' => 'powered-by',
-    'module' => 'system',
-    'node_types' => array(),
-    'pages' => '',
-    'roles' => array(),
-    'themes' => array(
-      'eldir' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'eldir',
-        'weight' => 10,
+        'weight' => 0,
       ),
     ),
     'title' => '',
@@ -172,66 +92,6 @@ function hosting_custom_settings_default_fe_block_settings() {
     ),
     'title' => '',
     'visibility' => 0,
-  );
-
-  $export['user-login'] = array(
-    'cache' => -1,
-    'custom' => 0,
-    'delta' => 'login',
-    'module' => 'user',
-    'node_types' => array(),
-    'pages' => '<front>',
-    'roles' => array(),
-    'themes' => array(
-      'eldir' => array(
-        'region' => 'sidebar_first',
-        'status' => 1,
-        'theme' => 'eldir',
-        'weight' => -12,
-      ),
-    ),
-    'title' => '',
-    'visibility' => 1,
-  );
-
-  $export['views-hosting_client_list-block_1'] = array(
-    'cache' => -1,
-    'custom' => 0,
-    'delta' => 'hosting_client_list-block_1',
-    'module' => 'views',
-    'node_types' => array(),
-    'pages' => '',
-    'roles' => array(),
-    'themes' => array(
-      'eldir' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'eldir',
-        'weight' => 0,
-      ),
-    ),
-    'title' => '',
-    'visibility' => 0,
-  );
-
-  $export['views-hosting_platform_list-block_1'] = array(
-    'cache' => -1,
-    'custom' => 0,
-    'delta' => 'hosting_platform_list-block_1',
-    'module' => 'views',
-    'node_types' => array(),
-    'pages' => 'hosting/c/server_*',
-    'roles' => array(),
-    'themes' => array(
-      'eldir' => array(
-        'region' => 'content_bottom',
-        'status' => 1,
-        'theme' => 'eldir',
-        'weight' => 0,
-      ),
-    ),
-    'title' => '',
-    'visibility' => 1,
   );
 
   $export['views-hosting_site_list-block_sites'] = array(
@@ -264,10 +124,10 @@ function hosting_custom_settings_default_fe_block_settings() {
     'roles' => array(),
     'themes' => array(
       'eldir' => array(
-        'region' => 'sidebar_first',
+        'region' => 'sidebar_second',
         'status' => 1,
         'theme' => 'eldir',
-        'weight' => -10,
+        'weight' => 0,
       ),
     ),
     'title' => '',
