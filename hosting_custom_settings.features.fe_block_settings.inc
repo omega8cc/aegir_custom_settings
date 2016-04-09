@@ -62,8 +62,8 @@ function hosting_custom_settings_default_fe_block_settings() {
     'roles' => array(),
     'themes' => array(
       'eldir' => array(
-        'region' => 'sidebar_first',
-        'status' => 1,
+        'region' => '',
+        'status' => 0,
         'theme' => 'eldir',
         'weight' => -12,
       ),
