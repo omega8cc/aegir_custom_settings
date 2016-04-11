@@ -332,6 +332,7 @@ function hosting_custom_settings_user_default_permissions() {
   $permissions['administer sites'] = array(
     'name' => 'administer sites',
     'roles' => array(
+      'admin' => 'admin',
       'root' => 'root',
     ),
     'module' => 'hosting_site',
@@ -1263,6 +1264,9 @@ function hosting_custom_settings_user_default_permissions() {
   $permissions['execute hosting_site_flush_cache_action'] = array(
     'name' => 'execute hosting_site_flush_cache_action',
     'roles' => array(
+      'admin' => 'admin',
+      'aegir account manager' => 'aegir account manager',
+      'aegir administrator' => 'aegir administrator',
       'root' => 'root',
     ),
     'module' => 'actions_permissions',
@@ -1275,7 +1279,6 @@ function hosting_custom_settings_user_default_permissions() {
       'admin' => 'admin',
       'aegir account manager' => 'aegir account manager',
       'aegir administrator' => 'aegir administrator',
-      'aegir client' => 'aegir client',
       'root' => 'root',
     ),
     'module' => 'actions_permissions',
@@ -1332,28 +1335,14 @@ function hosting_custom_settings_user_default_permissions() {
   // Exported permission: 'execute node_publish_action'.
   $permissions['execute node_publish_action'] = array(
     'name' => 'execute node_publish_action',
-    'roles' => array(
-      'admin' => 'admin',
-      'aegir account manager' => 'aegir account manager',
-      'aegir administrator' => 'aegir administrator',
-      'aegir client' => 'aegir client',
-      'aegir platform manager' => 'aegir platform manager',
-      'root' => 'root',
-    ),
+    'roles' => array(),
     'module' => 'actions_permissions',
   );
 
   // Exported permission: 'execute node_save_action'.
   $permissions['execute node_save_action'] = array(
     'name' => 'execute node_save_action',
-    'roles' => array(
-      'admin' => 'admin',
-      'aegir account manager' => 'aegir account manager',
-      'aegir administrator' => 'aegir administrator',
-      'aegir client' => 'aegir client',
-      'aegir platform manager' => 'aegir platform manager',
-      'root' => 'root',
-    ),
+    'roles' => array(),
     'module' => 'actions_permissions',
   );
 
@@ -1589,6 +1578,13 @@ function hosting_custom_settings_user_default_permissions() {
   // Exported permission: 'use text format full_html'.
   $permissions['use text format full_html'] = array(
     'name' => 'use text format full_html',
+    'roles' => array(),
+    'module' => 'filter',
+  );
+
+  // Exported permission: 'use text format plain_text'.
+  $permissions['use text format plain_text'] = array(
+    'name' => 'use text format plain_text',
     'roles' => array(),
     'module' => 'filter',
   );
