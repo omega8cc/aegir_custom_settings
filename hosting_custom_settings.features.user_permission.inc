@@ -563,10 +563,7 @@ function hosting_custom_settings_user_default_permissions() {
   // Exported permission: 'create features_revert_all task'.
   $permissions['create features_revert_all task'] = array(
     'name' => 'create features_revert_all task',
-    'roles' => array(
-      'admin' => 'admin',
-      'root' => 'root',
-    ),
+    'roles' => array(),
     'module' => 'hosting_tasks_extra',
   );
 
@@ -585,7 +582,6 @@ function hosting_custom_settings_user_default_permissions() {
   $permissions['create flush_drush_cache task'] = array(
     'name' => 'create flush_drush_cache task',
     'roles' => array(
-      'admin' => 'admin',
       'root' => 'root',
     ),
     'module' => 'hosting_tasks_extra',
@@ -1215,7 +1211,13 @@ function hosting_custom_settings_user_default_permissions() {
   // Exported permission: 'execute hosting_site_backup_action'.
   $permissions['execute hosting_site_backup_action'] = array(
     'name' => 'execute hosting_site_backup_action',
-    'roles' => array(),
+    'roles' => array(
+      'admin' => 'admin',
+      'aegir account manager' => 'aegir account manager',
+      'aegir administrator' => 'aegir administrator',
+      'aegir client' => 'aegir client',
+      'root' => 'root',
+    ),
     'module' => 'actions_permissions',
   );
 
@@ -1260,14 +1262,22 @@ function hosting_custom_settings_user_default_permissions() {
   // Exported permission: 'execute hosting_site_flush_cache_action'.
   $permissions['execute hosting_site_flush_cache_action'] = array(
     'name' => 'execute hosting_site_flush_cache_action',
-    'roles' => array(),
+    'roles' => array(
+      'root' => 'root',
+    ),
     'module' => 'actions_permissions',
   );
 
   // Exported permission: 'execute hosting_site_rebuild_registry_action'.
   $permissions['execute hosting_site_rebuild_registry_action'] = array(
     'name' => 'execute hosting_site_rebuild_registry_action',
-    'roles' => array(),
+    'roles' => array(
+      'admin' => 'admin',
+      'aegir account manager' => 'aegir account manager',
+      'aegir administrator' => 'aegir administrator',
+      'aegir client' => 'aegir client',
+      'root' => 'root',
+    ),
     'module' => 'actions_permissions',
   );
 
@@ -1322,14 +1332,28 @@ function hosting_custom_settings_user_default_permissions() {
   // Exported permission: 'execute node_publish_action'.
   $permissions['execute node_publish_action'] = array(
     'name' => 'execute node_publish_action',
-    'roles' => array(),
+    'roles' => array(
+      'admin' => 'admin',
+      'aegir account manager' => 'aegir account manager',
+      'aegir administrator' => 'aegir administrator',
+      'aegir client' => 'aegir client',
+      'aegir platform manager' => 'aegir platform manager',
+      'root' => 'root',
+    ),
     'module' => 'actions_permissions',
   );
 
   // Exported permission: 'execute node_save_action'.
   $permissions['execute node_save_action'] = array(
     'name' => 'execute node_save_action',
-    'roles' => array(),
+    'roles' => array(
+      'admin' => 'admin',
+      'aegir account manager' => 'aegir account manager',
+      'aegir administrator' => 'aegir administrator',
+      'aegir client' => 'aegir client',
+      'aegir platform manager' => 'aegir platform manager',
+      'root' => 'root',
+    ),
     'module' => 'actions_permissions',
   );
 
