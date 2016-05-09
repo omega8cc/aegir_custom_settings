@@ -200,6 +200,8 @@ function hosting_custom_settings_user_default_permissions() {
   $permissions['administer comments'] = array(
     'name' => 'administer comments',
     'roles' => array(
+      'admin' => 'admin',
+      'aegir account manager' => 'aegir account manager',
       'root' => 'root',
     ),
     'module' => 'comment',
