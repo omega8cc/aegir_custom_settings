@@ -747,6 +747,16 @@ function hosting_custom_settings_user_default_permissions() {
     'module' => 'hosting_platform',
   );
 
+  // Exported permission: 'create ssl certificate'.
+  $permissions['create ssl certificate'] = array(
+    'name' => 'create ssl certificate',
+    'roles' => array(
+      'admin' => 'admin',
+      'root' => 'root',
+    ),
+    'module' => 'hosting_ssl',
+  );
+
   // Exported permission: 'create task content'.
   $permissions['create task content'] = array(
     'name' => 'create task content',
