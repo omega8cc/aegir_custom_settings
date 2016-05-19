@@ -399,7 +399,6 @@ function hosting_custom_settings_user_default_permissions() {
   $permissions['bypass node access'] = array(
     'name' => 'bypass node access',
     'roles' => array(
-      'admin' => 'admin',
       'root' => 'root',
     ),
     'module' => 'node',
@@ -516,7 +515,10 @@ function hosting_custom_settings_user_default_permissions() {
   // Exported permission: 'create client content'.
   $permissions['create client content'] = array(
     'name' => 'create client content',
-    'roles' => array(),
+    'roles' => array(
+      'admin' => 'admin',
+      'root' => 'root',
+    ),
     'module' => 'node',
   );
 
@@ -654,7 +656,10 @@ function hosting_custom_settings_user_default_permissions() {
   // Exported permission: 'create platform content'.
   $permissions['create platform content'] = array(
     'name' => 'create platform content',
-    'roles' => array(),
+    'roles' => array(
+      'admin' => 'admin',
+      'root' => 'root',
+    ),
     'module' => 'node',
   );
 
@@ -725,7 +730,10 @@ function hosting_custom_settings_user_default_permissions() {
   // Exported permission: 'create site content'.
   $permissions['create site content'] = array(
     'name' => 'create site content',
-    'roles' => array(),
+    'roles' => array(
+      'admin' => 'admin',
+      'root' => 'root',
+    ),
     'module' => 'node',
   );
 
@@ -804,7 +812,9 @@ function hosting_custom_settings_user_default_permissions() {
   // Exported permission: 'delete any client content'.
   $permissions['delete any client content'] = array(
     'name' => 'delete any client content',
-    'roles' => array(),
+    'roles' => array(
+      'root' => 'root',
+    ),
     'module' => 'node',
   );
 
@@ -818,7 +828,9 @@ function hosting_custom_settings_user_default_permissions() {
   // Exported permission: 'delete any platform content'.
   $permissions['delete any platform content'] = array(
     'name' => 'delete any platform content',
-    'roles' => array(),
+    'roles' => array(
+      'root' => 'root',
+    ),
     'module' => 'node',
   );
 
@@ -832,7 +844,9 @@ function hosting_custom_settings_user_default_permissions() {
   // Exported permission: 'delete any site content'.
   $permissions['delete any site content'] = array(
     'name' => 'delete any site content',
-    'roles' => array(),
+    'roles' => array(
+      'root' => 'root',
+    ),
     'module' => 'node',
   );
 
@@ -864,7 +878,10 @@ function hosting_custom_settings_user_default_permissions() {
   // Exported permission: 'delete own client content'.
   $permissions['delete own client content'] = array(
     'name' => 'delete own client content',
-    'roles' => array(),
+    'roles' => array(
+      'admin' => 'admin',
+      'root' => 'root',
+    ),
     'module' => 'node',
   );
 
@@ -878,7 +895,10 @@ function hosting_custom_settings_user_default_permissions() {
   // Exported permission: 'delete own platform content'.
   $permissions['delete own platform content'] = array(
     'name' => 'delete own platform content',
-    'roles' => array(),
+    'roles' => array(
+      'admin' => 'admin',
+      'root' => 'root',
+    ),
     'module' => 'node',
   );
 
@@ -892,7 +912,10 @@ function hosting_custom_settings_user_default_permissions() {
   // Exported permission: 'delete own site content'.
   $permissions['delete own site content'] = array(
     'name' => 'delete own site content',
-    'roles' => array(),
+    'roles' => array(
+      'admin' => 'admin',
+      'root' => 'root',
+    ),
     'module' => 'node',
   );
 
@@ -964,7 +987,9 @@ function hosting_custom_settings_user_default_permissions() {
   // Exported permission: 'edit any client content'.
   $permissions['edit any client content'] = array(
     'name' => 'edit any client content',
-    'roles' => array(),
+    'roles' => array(
+      'root' => 'root',
+    ),
     'module' => 'node',
   );
 
@@ -978,7 +1003,9 @@ function hosting_custom_settings_user_default_permissions() {
   // Exported permission: 'edit any platform content'.
   $permissions['edit any platform content'] = array(
     'name' => 'edit any platform content',
-    'roles' => array(),
+    'roles' => array(
+      'root' => 'root',
+    ),
     'module' => 'node',
   );
 
@@ -992,7 +1019,9 @@ function hosting_custom_settings_user_default_permissions() {
   // Exported permission: 'edit any site content'.
   $permissions['edit any site content'] = array(
     'name' => 'edit any site content',
-    'roles' => array(),
+    'roles' => array(
+      'root' => 'root',
+    ),
     'module' => 'node',
   );
 
@@ -1062,7 +1091,10 @@ function hosting_custom_settings_user_default_permissions() {
   // Exported permission: 'edit own client content'.
   $permissions['edit own client content'] = array(
     'name' => 'edit own client content',
-    'roles' => array(),
+    'roles' => array(
+      'admin' => 'admin',
+      'root' => 'root',
+    ),
     'module' => 'node',
   );
 
@@ -1086,7 +1118,10 @@ function hosting_custom_settings_user_default_permissions() {
   // Exported permission: 'edit own platform content'.
   $permissions['edit own platform content'] = array(
     'name' => 'edit own platform content',
-    'roles' => array(),
+    'roles' => array(
+      'admin' => 'admin',
+      'root' => 'root',
+    ),
     'module' => 'node',
   );
 
@@ -1100,7 +1135,10 @@ function hosting_custom_settings_user_default_permissions() {
   // Exported permission: 'edit own site content'.
   $permissions['edit own site content'] = array(
     'name' => 'edit own site content',
-    'roles' => array(),
+    'roles' => array(
+      'admin' => 'admin',
+      'root' => 'root',
+    ),
     'module' => 'node',
   );
 
