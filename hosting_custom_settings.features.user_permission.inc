@@ -760,6 +760,8 @@ function hosting_custom_settings_user_default_permissions() {
     'name' => 'create ssl certificate',
     'roles' => array(
       'admin' => 'admin',
+      'aegir administrator' => 'aegir administrator',
+      'aegir client' => 'aegir client',
       'root' => 'root',
     ),
     'module' => 'hosting_ssl',
