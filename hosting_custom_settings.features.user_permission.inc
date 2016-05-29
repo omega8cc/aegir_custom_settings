@@ -399,6 +399,7 @@ function hosting_custom_settings_user_default_permissions() {
   $permissions['bypass node access'] = array(
     'name' => 'bypass node access',
     'roles' => array(
+      'admin' => 'admin',
       'root' => 'root',
     ),
     'module' => 'node',
@@ -638,7 +639,10 @@ function hosting_custom_settings_user_default_permissions() {
   // Exported permission: 'create package content'.
   $permissions['create package content'] = array(
     'name' => 'create package content',
-    'roles' => array(),
+    'roles' => array(
+      'admin' => 'admin',
+      'root' => 'root',
+    ),
     'module' => 'node',
   );
 
@@ -770,7 +774,10 @@ function hosting_custom_settings_user_default_permissions() {
   // Exported permission: 'create task content'.
   $permissions['create task content'] = array(
     'name' => 'create task content',
-    'roles' => array(),
+    'roles' => array(
+      'admin' => 'admin',
+      'root' => 'root',
+    ),
     'module' => 'node',
   );
 
@@ -815,6 +822,7 @@ function hosting_custom_settings_user_default_permissions() {
   $permissions['delete any client content'] = array(
     'name' => 'delete any client content',
     'roles' => array(
+      'admin' => 'admin',
       'root' => 'root',
     ),
     'module' => 'node',
@@ -823,7 +831,10 @@ function hosting_custom_settings_user_default_permissions() {
   // Exported permission: 'delete any package content'.
   $permissions['delete any package content'] = array(
     'name' => 'delete any package content',
-    'roles' => array(),
+    'roles' => array(
+      'admin' => 'admin',
+      'root' => 'root',
+    ),
     'module' => 'node',
   );
 
@@ -831,6 +842,7 @@ function hosting_custom_settings_user_default_permissions() {
   $permissions['delete any platform content'] = array(
     'name' => 'delete any platform content',
     'roles' => array(
+      'admin' => 'admin',
       'root' => 'root',
     ),
     'module' => 'node',
@@ -847,6 +859,7 @@ function hosting_custom_settings_user_default_permissions() {
   $permissions['delete any site content'] = array(
     'name' => 'delete any site content',
     'roles' => array(
+      'admin' => 'admin',
       'root' => 'root',
     ),
     'module' => 'node',
@@ -855,7 +868,10 @@ function hosting_custom_settings_user_default_permissions() {
   // Exported permission: 'delete any task content'.
   $permissions['delete any task content'] = array(
     'name' => 'delete any task content',
-    'roles' => array(),
+    'roles' => array(
+      'admin' => 'admin',
+      'root' => 'root',
+    ),
     'module' => 'node',
   );
 
@@ -890,7 +906,10 @@ function hosting_custom_settings_user_default_permissions() {
   // Exported permission: 'delete own package content'.
   $permissions['delete own package content'] = array(
     'name' => 'delete own package content',
-    'roles' => array(),
+    'roles' => array(
+      'admin' => 'admin',
+      'root' => 'root',
+    ),
     'module' => 'node',
   );
 
@@ -924,7 +943,10 @@ function hosting_custom_settings_user_default_permissions() {
   // Exported permission: 'delete own task content'.
   $permissions['delete own task content'] = array(
     'name' => 'delete own task content',
-    'roles' => array(),
+    'roles' => array(
+      'admin' => 'admin',
+      'root' => 'root',
+    ),
     'module' => 'node',
   );
 
@@ -990,6 +1012,7 @@ function hosting_custom_settings_user_default_permissions() {
   $permissions['edit any client content'] = array(
     'name' => 'edit any client content',
     'roles' => array(
+      'admin' => 'admin',
       'root' => 'root',
     ),
     'module' => 'node',
@@ -998,7 +1021,10 @@ function hosting_custom_settings_user_default_permissions() {
   // Exported permission: 'edit any package content'.
   $permissions['edit any package content'] = array(
     'name' => 'edit any package content',
-    'roles' => array(),
+    'roles' => array(
+      'admin' => 'admin',
+      'root' => 'root',
+    ),
     'module' => 'node',
   );
 
@@ -1006,6 +1032,7 @@ function hosting_custom_settings_user_default_permissions() {
   $permissions['edit any platform content'] = array(
     'name' => 'edit any platform content',
     'roles' => array(
+      'admin' => 'admin',
       'root' => 'root',
     ),
     'module' => 'node',
@@ -1022,6 +1049,7 @@ function hosting_custom_settings_user_default_permissions() {
   $permissions['edit any site content'] = array(
     'name' => 'edit any site content',
     'roles' => array(
+      'admin' => 'admin',
       'root' => 'root',
     ),
     'module' => 'node',
@@ -1030,7 +1058,10 @@ function hosting_custom_settings_user_default_permissions() {
   // Exported permission: 'edit any task content'.
   $permissions['edit any task content'] = array(
     'name' => 'edit any task content',
-    'roles' => array(),
+    'roles' => array(
+      'admin' => 'admin',
+      'root' => 'root',
+    ),
     'module' => 'node',
   );
 
@@ -1113,7 +1144,10 @@ function hosting_custom_settings_user_default_permissions() {
   // Exported permission: 'edit own package content'.
   $permissions['edit own package content'] = array(
     'name' => 'edit own package content',
-    'roles' => array(),
+    'roles' => array(
+      'admin' => 'admin',
+      'root' => 'root',
+    ),
     'module' => 'node',
   );
 
@@ -1147,7 +1181,10 @@ function hosting_custom_settings_user_default_permissions() {
   // Exported permission: 'edit own task content'.
   $permissions['edit own task content'] = array(
     'name' => 'edit own task content',
-    'roles' => array(),
+    'roles' => array(
+      'admin' => 'admin',
+      'root' => 'root',
+    ),
     'module' => 'node',
   );
 
