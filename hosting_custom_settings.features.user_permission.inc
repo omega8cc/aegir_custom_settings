@@ -14,6 +14,7 @@ function hosting_custom_settings_user_default_permissions() {
   $permissions['access administration menu'] = array(
     'name' => 'access administration menu',
     'roles' => array(
+      'aegir administrator' => 'aegir administrator',
       'root' => 'root',
     ),
     'module' => 'admin_menu',
@@ -52,7 +53,9 @@ function hosting_custom_settings_user_default_permissions() {
     'roles' => array(
       'admin' => 'admin',
       'aegir account manager' => 'aegir account manager',
+      'aegir administrator' => 'aegir administrator',
       'aegir client' => 'aegir client',
+      'aegir platform manager' => 'aegir platform manager',
       'anonymous user' => 'anonymous user',
       'authenticated user' => 'authenticated user',
       'root' => 'root',
@@ -76,6 +79,7 @@ function hosting_custom_settings_user_default_permissions() {
     'roles' => array(
       'admin' => 'admin',
       'aegir account manager' => 'aegir account manager',
+      'aegir administrator' => 'aegir administrator',
       'aegir client' => 'aegir client',
       'anonymous user' => 'anonymous user',
       'authenticated user' => 'authenticated user',
@@ -97,7 +101,9 @@ function hosting_custom_settings_user_default_permissions() {
   // Exported permission: 'access hosting wizard'.
   $permissions['access hosting wizard'] = array(
     'name' => 'access hosting wizard',
-    'roles' => array(),
+    'roles' => array(
+      'aegir administrator' => 'aegir administrator',
+    ),
     'module' => 'hosting',
   );
 
@@ -151,6 +157,8 @@ function hosting_custom_settings_user_default_permissions() {
     'name' => 'access user profiles',
     'roles' => array(
       'admin' => 'admin',
+      'aegir account manager' => 'aegir account manager',
+      'aegir administrator' => 'aegir administrator',
       'root' => 'root',
     ),
     'module' => 'user',
@@ -231,7 +239,9 @@ function hosting_custom_settings_user_default_permissions() {
   // Exported permission: 'administer hosting'.
   $permissions['administer hosting'] = array(
     'name' => 'administer hosting',
-    'roles' => array(),
+    'roles' => array(
+      'aegir administrator' => 'aegir administrator',
+    ),
     'module' => 'hosting',
   );
 
@@ -245,21 +255,27 @@ function hosting_custom_settings_user_default_permissions() {
   // Exported permission: 'administer hosting features'.
   $permissions['administer hosting features'] = array(
     'name' => 'administer hosting features',
-    'roles' => array(),
+    'roles' => array(
+      'aegir administrator' => 'aegir administrator',
+    ),
     'module' => 'hosting',
   );
 
   // Exported permission: 'administer hosting queues'.
   $permissions['administer hosting queues'] = array(
     'name' => 'administer hosting queues',
-    'roles' => array(),
+    'roles' => array(
+      'aegir administrator' => 'aegir administrator',
+    ),
     'module' => 'hosting',
   );
 
   // Exported permission: 'administer hosting settings'.
   $permissions['administer hosting settings'] = array(
     'name' => 'administer hosting settings',
-    'roles' => array(),
+    'roles' => array(
+      'aegir administrator' => 'aegir administrator',
+    ),
     'module' => 'hosting',
   );
 
@@ -335,6 +351,8 @@ function hosting_custom_settings_user_default_permissions() {
     'name' => 'administer sites',
     'roles' => array(
       'admin' => 'admin',
+      'aegir administrator' => 'aegir administrator',
+      'aegir platform manager' => 'aegir platform manager',
       'root' => 'root',
     ),
     'module' => 'hosting_site',
@@ -715,7 +733,9 @@ function hosting_custom_settings_user_default_permissions() {
     'name' => 'create site',
     'roles' => array(
       'admin' => 'admin',
+      'aegir administrator' => 'aegir administrator',
       'aegir client' => 'aegir client',
+      'aegir platform manager' => 'aegir platform manager',
       'root' => 'root',
     ),
     'module' => 'hosting_site',
@@ -986,7 +1006,9 @@ function hosting_custom_settings_user_default_permissions() {
     'name' => 'delete site',
     'roles' => array(
       'admin' => 'admin',
+      'aegir administrator' => 'aegir administrator',
       'aegir client' => 'aegir client',
+      'aegir platform manager' => 'aegir platform manager',
       'root' => 'root',
     ),
     'module' => 'hosting_site',
@@ -1217,7 +1239,9 @@ function hosting_custom_settings_user_default_permissions() {
     'name' => 'edit site',
     'roles' => array(
       'admin' => 'admin',
+      'aegir administrator' => 'aegir administrator',
       'aegir client' => 'aegir client',
+      'aegir platform manager' => 'aegir platform manager',
       'root' => 'root',
     ),
     'module' => 'hosting_site',
@@ -1751,7 +1775,11 @@ function hosting_custom_settings_user_default_permissions() {
   // Exported permission: 'view revisions'.
   $permissions['view revisions'] = array(
     'name' => 'view revisions',
-    'roles' => array(),
+    'roles' => array(
+      'aegir administrator' => 'aegir administrator',
+      'aegir client' => 'aegir client',
+      'aegir platform manager' => 'aegir platform manager',
+    ),
     'module' => 'node',
   );
 
@@ -1767,7 +1795,10 @@ function hosting_custom_settings_user_default_permissions() {
     'name' => 'view site',
     'roles' => array(
       'admin' => 'admin',
+      'aegir account manager' => 'aegir account manager',
+      'aegir administrator' => 'aegir administrator',
       'aegir client' => 'aegir client',
+      'aegir platform manager' => 'aegir platform manager',
       'root' => 'root',
     ),
     'module' => 'hosting_site',
