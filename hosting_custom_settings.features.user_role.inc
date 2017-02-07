@@ -16,12 +16,6 @@ function hosting_custom_settings_user_default_roles() {
     'weight' => 0,
   );
 
-  // Exported role: administrator.
-  $roles['administrator'] = array(
-    'name' => 'administrator',
-    'weight' => 20,
-  );
-
   // Exported role: aegir account manager.
   $roles['aegir account manager'] = array(
     'name' => 'aegir account manager',
