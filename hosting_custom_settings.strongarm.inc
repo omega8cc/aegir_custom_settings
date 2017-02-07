@@ -664,7 +664,7 @@ function hosting_custom_settings_strongarm() {
     'up_status' => 0,
     'up_roles' => 0,
     'up_openid' => 0,
-    'up_delete' => 0,
+    'up_cancel' => 0,
     'up_edit' => 0,
   );
   $export['userprotect_administrator_bypass_defaults'] = $strongarm;
@@ -687,7 +687,7 @@ function hosting_custom_settings_strongarm() {
     'up_pass' => 0,
     'up_status' => 0,
     'up_openid' => 0,
-    'up_delete' => 0,
+    'up_cancel' => 0,
     'up_edit' => 0,
   );
   $export['userprotect_protection_defaults'] = $strongarm;
@@ -704,7 +704,7 @@ function hosting_custom_settings_strongarm() {
       'up_status' => 1,
       'up_roles' => 1,
       'up_openid' => 0,
-      'up_delete' => 1,
+      'up_cancel' => 1,
       'up_edit' => 0,
     ),
     4 => array(
@@ -714,7 +714,7 @@ function hosting_custom_settings_strongarm() {
       'up_status' => 0,
       'up_roles' => 1,
       'up_openid' => 0,
-      'up_delete' => 0,
+      'up_cancel' => 0,
       'up_edit' => 0,
     ),
     3 => array(
@@ -724,7 +724,7 @@ function hosting_custom_settings_strongarm() {
       'up_status' => 0,
       'up_roles' => 1,
       'up_openid' => 0,
-      'up_delete' => 0,
+      'up_cancel' => 0,
       'up_edit' => 0,
     ),
     2 => array(
@@ -734,7 +734,7 @@ function hosting_custom_settings_strongarm() {
       'up_status' => 0,
       'up_roles' => 1,
       'up_openid' => 0,
-      'up_delete' => 0,
+      'up_cancel' => 0,
       'up_edit' => 0,
     ),
     6 => array(
@@ -744,7 +744,7 @@ function hosting_custom_settings_strongarm() {
       'up_status' => 1,
       'up_roles' => 1,
       'up_openid' => 0,
-      'up_delete' => 1,
+      'up_cancel' => 1,
       'up_edit' => 0,
     ),
   );
