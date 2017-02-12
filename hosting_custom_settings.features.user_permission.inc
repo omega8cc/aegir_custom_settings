@@ -1394,7 +1394,12 @@ function hosting_custom_settings_user_default_permissions() {
   // Exported permission: 'execute hosting_site_update_action'.
   $permissions['execute hosting_site_update_action'] = array(
     'name' => 'execute hosting_site_update_action',
-    'roles' => array(),
+    'roles' => array(
+      'admin' => 'admin',
+      'aegir account manager' => 'aegir account manager',
+      'aegir administrator' => 'aegir administrator',
+      'root' => 'root',
+    ),
     'module' => 'actions_permissions',
   );
 
