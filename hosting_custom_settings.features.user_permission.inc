@@ -1605,13 +1605,6 @@ function hosting_custom_settings_user_default_permissions() {
     'module' => 'features',
   );
 
-  // Exported permission: 'mass delete revisions'.
-  $permissions['mass delete revisions'] = array(
-    'name' => 'mass delete revisions',
-    'roles' => array(),
-    'module' => 'revision_deletion',
-  );
-
   // Exported permission: 'post comments'.
   $permissions['post comments'] = array(
     'name' => 'post comments',
