@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @file
  * hosting_custom_settings.features.user_role.inc

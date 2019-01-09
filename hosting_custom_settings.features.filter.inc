@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @file
  * hosting_custom_settings.features.filter.inc

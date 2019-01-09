@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @file
  * hosting_custom_settings.features.user_permission.inc
@@ -99,6 +100,13 @@ function hosting_custom_settings_user_default_permissions() {
     'name' => 'access hosting wizard',
     'roles' => array(),
     'module' => 'hosting',
+  );
+
+  // Exported permission: 'access library reports'.
+  $permissions['access library reports'] = array(
+    'name' => 'access library reports',
+    'roles' => array(),
+    'module' => 'libraries',
   );
 
   // Exported permission: 'access overlay'.
@@ -284,6 +292,13 @@ function hosting_custom_settings_user_default_permissions() {
     'module' => 'menu',
   );
 
+  // Exported permission: 'administer module filter'.
+  $permissions['administer module filter'] = array(
+    'name' => 'administer module filter',
+    'roles' => array(),
+    'module' => 'module_filter',
+  );
+
   // Exported permission: 'administer modules'.
   $permissions['administer modules'] = array(
     'name' => 'administer modules',
@@ -319,6 +334,13 @@ function hosting_custom_settings_user_default_permissions() {
       'root' => 'root',
     ),
     'module' => 'hosting_platform',
+  );
+
+  // Exported permission: 'administer revision_deletion'.
+  $permissions['administer revision_deletion'] = array(
+    'name' => 'administer revision_deletion',
+    'roles' => array(),
+    'module' => 'revision_deletion',
   );
 
   // Exported permission: 'administer server'.
@@ -591,6 +613,13 @@ function hosting_custom_settings_user_default_permissions() {
     'module' => 'hosting_tasks_extra',
   );
 
+  // Exported permission: 'create features_update_all task'.
+  $permissions['create features_update_all task'] = array(
+    'name' => 'create features_update_all task',
+    'roles' => array(),
+    'module' => 'hosting_tasks_extra',
+  );
+
   // Exported permission: 'create flush_cache task'.
   $permissions['create flush_cache task'] = array(
     'name' => 'create flush_cache task',
@@ -813,6 +842,13 @@ function hosting_custom_settings_user_default_permissions() {
       'admin' => 'admin',
       'root' => 'root',
     ),
+    'module' => 'hosting_tasks_extra',
+  );
+
+  // Exported permission: 'create update_translations task'.
+  $permissions['create update_translations task'] = array(
+    'name' => 'create update_translations task',
+    'roles' => array(),
     'module' => 'hosting_tasks_extra',
   );
 
@@ -1403,6 +1439,13 @@ function hosting_custom_settings_user_default_permissions() {
     'module' => 'actions_permissions',
   );
 
+  // Exported permission: 'execute hosting_site_update_translations_action'.
+  $permissions['execute hosting_site_update_translations_action'] = array(
+    'name' => 'execute hosting_site_update_translations_action',
+    'roles' => array(),
+    'module' => 'actions_permissions',
+  );
+
   // Exported permission: 'execute hosting_site_verify_action'.
   $permissions['execute hosting_site_verify_action'] = array(
     'name' => 'execute hosting_site_verify_action',
@@ -1528,6 +1571,13 @@ function hosting_custom_settings_user_default_permissions() {
     'module' => 'actions_permissions',
   );
 
+  // Exported permission: 'execute views_bulk_operations_change_owner_action'.
+  $permissions['execute views_bulk_operations_change_owner_action'] = array(
+    'name' => 'execute views_bulk_operations_change_owner_action',
+    'roles' => array(),
+    'module' => 'actions_permissions',
+  );
+
   // Exported permission: 'execute views_bulk_operations_delete_item'.
   $permissions['execute views_bulk_operations_delete_item'] = array(
     'name' => 'execute views_bulk_operations_delete_item',
@@ -1603,13 +1653,6 @@ function hosting_custom_settings_user_default_permissions() {
     'name' => 'manage features',
     'roles' => array(),
     'module' => 'features',
-  );
-
-  // Exported permission: 'mass delete revisions'.
-  $permissions['mass delete revisions'] = array(
-    'name' => 'mass delete revisions',
-    'roles' => array(),
-    'module' => 'revision_deletion',
   );
 
   // Exported permission: 'post comments'.
@@ -1695,6 +1738,13 @@ function hosting_custom_settings_user_default_permissions() {
     'roles' => array(
       'admin' => 'admin',
     ),
+    'module' => 'filter',
+  );
+
+  // Exported permission: 'use text format plain_text'.
+  $permissions['use text format plain_text'] = array(
+    'name' => 'use text format plain_text',
+    'roles' => array(),
     'module' => 'filter',
   );
 
