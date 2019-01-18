@@ -1741,13 +1741,6 @@ function hosting_custom_settings_user_default_permissions() {
     'module' => 'filter',
   );
 
-  // Exported permission: 'use text format plain_text'.
-  $permissions['use text format plain_text'] = array(
-    'name' => 'use text format plain_text',
-    'roles' => array(),
-    'module' => 'filter',
-  );
-
   // Exported permission: 'view client'.
   $permissions['view client'] = array(
     'name' => 'view client',
