@@ -564,6 +564,12 @@ function hosting_custom_settings_strongarm() {
   $strongarm->name = 'revision_delete';
   $strongarm->value = array(
     'task' => 'task',
+    'client' => 0,
+    'book' => 0,
+    'package' => 0,
+    'platform' => 0,
+    'server' => 0,
+    'site' => 0,
   );
   $export['revision_delete'] = $strongarm;
 
@@ -571,7 +577,7 @@ function hosting_custom_settings_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'revision_delete_age';
-  $strongarm->value = '604800';
+  $strongarm->value = '7776000';
   $export['revision_delete_age'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -606,14 +612,14 @@ function hosting_custom_settings_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'revision_delete_list_keep_date_last';
-  $strongarm->value = '0';
+  $strongarm->value = 0;
   $export['revision_delete_list_keep_date_last'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'revision_delete_list_keep_original';
-  $strongarm->value = '0';
+  $strongarm->value = 0;
   $export['revision_delete_list_keep_original'] = $strongarm;
 
   $strongarm = new stdClass();
