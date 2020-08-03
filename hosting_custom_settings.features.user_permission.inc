@@ -343,9 +343,9 @@ function hosting_custom_settings_user_default_permissions() {
     'module' => 'revision_deletion',
   );
 
-  // Exported permission: 'administer server'.
-  $permissions['administer server'] = array(
-    'name' => 'administer server',
+  // Exported permission: 'administer servers'.
+  $permissions['administer servers'] = array(
+    'name' => 'administer servers',
     'roles' => array(),
     'module' => 'hosting_server',
   );
