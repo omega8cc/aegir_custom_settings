@@ -528,6 +528,7 @@ function hosting_custom_settings_user_default_permissions() {
     'name' => 'create backup-delete task',
     'roles' => array(
       'admin' => 'admin',
+      'aegir client' => 'aegir client',
       'root' => 'root',
     ),
     'module' => 'hosting_task',
