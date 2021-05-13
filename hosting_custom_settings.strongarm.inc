@@ -529,6 +529,25 @@ function hosting_custom_settings_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'overlay_paths_ui_paths';
   $strongarm->value = array(
+    'admin/hosting' => array(
+      'width' => '80%',
+    ),
+    'admin/hosting/*' => array(
+      'width' => '80%',
+    ),
+    'comment/reply/*' => array(
+      'width' => '80%',
+    ),
+    'hosting/*/add' => array(
+      'width' => '80%',
+    ),
+    'hosting/task/*' => TRUE,
+    'node/*/tasks' => array(
+      'width' => '80%',
+    ),
+    'node/add/*' => array(
+      'width' => '80%',
+    ),
     'user/register' => array(
       'width' => '80%',
     ),
@@ -536,25 +555,6 @@ function hosting_custom_settings_strongarm() {
       'width' => '80%',
     ),
     'user/register/step/2' => FALSE,
-    'hosting/task/*' => TRUE,
-    'comment/reply/*' => array(
-      'width' => '80%',
-    ),
-    'node/add/*' => array(
-      'width' => '80%',
-    ),
-    'hosting/*/add' => array(
-      'width' => '80%',
-    ),
-    'node/*/tasks' => array(
-      'width' => '80%',
-    ),
-    'admin/hosting/*' => array(
-      'width' => '80%',
-    ),
-    'admin/hosting' => array(
-      'width' => '80%',
-    ),
   );
   $export['overlay_paths_ui_paths'] = $strongarm;
 
@@ -563,13 +563,13 @@ function hosting_custom_settings_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'revision_delete';
   $strongarm->value = array(
-    'task' => 'task',
-    'client' => 0,
     'book' => 0,
+    'client' => 0,
     'package' => 0,
     'platform' => 0,
     'server' => 0,
     'site' => 0,
+    'task' => 'task',
   );
   $export['revision_delete'] = $strongarm;
 
@@ -641,22 +641,22 @@ function hosting_custom_settings_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'theme_settings';
   $strongarm->value = array(
-    'toggle_logo' => 1,
-    'toggle_name' => 1,
-    'toggle_slogan' => 0,
-    'toggle_mission' => 1,
-    'toggle_node_user_picture' => 0,
-    'toggle_comment_user_picture' => 0,
-    'toggle_search' => 0,
-    'toggle_favicon' => 1,
-    'toggle_primary_links' => 1,
-    'toggle_secondary_links' => 1,
-    'default_logo' => 1,
-    'logo_path' => '',
-    'logo_upload' => '',
     'default_favicon' => 1,
+    'default_logo' => 1,
     'favicon_path' => '',
     'favicon_upload' => '',
+    'logo_path' => '',
+    'logo_upload' => '',
+    'toggle_comment_user_picture' => 0,
+    'toggle_favicon' => 1,
+    'toggle_logo' => 1,
+    'toggle_mission' => 1,
+    'toggle_name' => 1,
+    'toggle_node_user_picture' => 0,
+    'toggle_primary_links' => 1,
+    'toggle_search' => 0,
+    'toggle_secondary_links' => 1,
+    'toggle_slogan' => 0,
   );
   $export['theme_settings'] = $strongarm;
 
@@ -665,14 +665,14 @@ function hosting_custom_settings_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'userprotect_administrator_bypass_defaults';
   $strongarm->value = array(
-    'up_name' => 0,
-    'up_mail' => 0,
-    'up_pass' => 0,
-    'up_status' => 0,
-    'up_roles' => 0,
-    'up_openid' => 0,
     'up_cancel' => 0,
     'up_edit' => 0,
+    'up_mail' => 0,
+    'up_name' => 0,
+    'up_openid' => 0,
+    'up_pass' => 0,
+    'up_roles' => 0,
+    'up_status' => 0,
   );
   $export['userprotect_administrator_bypass_defaults'] = $strongarm;
 
@@ -688,14 +688,14 @@ function hosting_custom_settings_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'userprotect_protection_defaults';
   $strongarm->value = array(
-    'up_roles' => 'up_roles',
-    'up_name' => 0,
-    'up_mail' => 0,
-    'up_pass' => 0,
-    'up_status' => 0,
-    'up_openid' => 0,
     'up_cancel' => 0,
     'up_edit' => 0,
+    'up_mail' => 0,
+    'up_name' => 0,
+    'up_openid' => 0,
+    'up_pass' => 0,
+    'up_roles' => 'up_roles',
+    'up_status' => 0,
   );
   $export['userprotect_protection_defaults'] = $strongarm;
 
@@ -704,55 +704,55 @@ function hosting_custom_settings_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'userprotect_role_protections';
   $strongarm->value = array(
-    5 => array(
-      'up_name' => 0,
-      'up_mail' => 0,
-      'up_pass' => 0,
-      'up_status' => 1,
-      'up_roles' => 1,
-      'up_openid' => 0,
-      'up_cancel' => 1,
-      'up_edit' => 0,
-    ),
-    4 => array(
-      'up_name' => 0,
-      'up_mail' => 0,
-      'up_pass' => 0,
-      'up_status' => 0,
-      'up_roles' => 1,
-      'up_openid' => 0,
+    2 => array(
       'up_cancel' => 0,
       'up_edit' => 0,
+      'up_mail' => 0,
+      'up_name' => 0,
+      'up_openid' => 0,
+      'up_pass' => 0,
+      'up_roles' => 1,
+      'up_status' => 0,
     ),
     3 => array(
-      'up_name' => 0,
-      'up_mail' => 0,
-      'up_pass' => 0,
-      'up_status' => 0,
-      'up_roles' => 1,
-      'up_openid' => 0,
       'up_cancel' => 0,
       'up_edit' => 0,
-    ),
-    2 => array(
-      'up_name' => 0,
       'up_mail' => 0,
-      'up_pass' => 0,
-      'up_status' => 0,
-      'up_roles' => 1,
+      'up_name' => 0,
       'up_openid' => 0,
+      'up_pass' => 0,
+      'up_roles' => 1,
+      'up_status' => 0,
+    ),
+    4 => array(
       'up_cancel' => 0,
       'up_edit' => 0,
-    ),
-    6 => array(
-      'up_name' => 0,
       'up_mail' => 0,
-      'up_pass' => 0,
-      'up_status' => 1,
-      'up_roles' => 1,
+      'up_name' => 0,
       'up_openid' => 0,
+      'up_pass' => 0,
+      'up_roles' => 1,
+      'up_status' => 0,
+    ),
+    5 => array(
       'up_cancel' => 1,
       'up_edit' => 0,
+      'up_mail' => 0,
+      'up_name' => 0,
+      'up_openid' => 0,
+      'up_pass' => 0,
+      'up_roles' => 1,
+      'up_status' => 1,
+    ),
+    6 => array(
+      'up_cancel' => 1,
+      'up_edit' => 0,
+      'up_mail' => 0,
+      'up_name' => 0,
+      'up_openid' => 0,
+      'up_pass' => 0,
+      'up_roles' => 1,
+      'up_status' => 1,
     ),
   );
   $export['userprotect_role_protections'] = $strongarm;
