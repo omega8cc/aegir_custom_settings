@@ -240,7 +240,6 @@ features[user_permission][] = execute hosting_site_disable_action
 features[user_permission][] = execute hosting_site_enable_action
 features[user_permission][] = execute hosting_site_flush_cache_action
 features[user_permission][] = execute hosting_site_rebuild_registry_action
-features[user_permission][] = execute hosting_site_update_action
 features[user_permission][] = execute hosting_site_update_translations_action
 features[user_permission][] = execute hosting_site_verify_action
 features[user_permission][] = execute node_assign_owner_action
