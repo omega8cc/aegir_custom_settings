@@ -516,8 +516,6 @@ function hosting_custom_settings_user_default_permissions() {
   $permissions['create backup task'] = array(
     'name' => 'create backup task',
     'roles' => array(
-      'admin' => 'admin',
-      'aegir client' => 'aegir client',
       'root' => 'root',
     ),
     'module' => 'hosting_task',
@@ -527,8 +525,6 @@ function hosting_custom_settings_user_default_permissions() {
   $permissions['create backup-delete task'] = array(
     'name' => 'create backup-delete task',
     'roles' => array(
-      'admin' => 'admin',
-      'aegir client' => 'aegir client',
       'root' => 'root',
     ),
     'module' => 'hosting_task',
@@ -730,8 +726,6 @@ function hosting_custom_settings_user_default_permissions() {
   $permissions['create restore task'] = array(
     'name' => 'create restore task',
     'roles' => array(
-      'admin' => 'admin',
-      'aegir client' => 'aegir client',
       'root' => 'root',
     ),
     'module' => 'hosting_task',
