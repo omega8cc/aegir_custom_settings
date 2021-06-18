@@ -278,13 +278,6 @@ function hosting_custom_settings_user_default_permissions() {
     'module' => 'hosting',
   );
 
-  // Exported permission: 'administer hosting site backup manager'.
-  $permissions['administer hosting site backup manager'] = array(
-    'name' => 'administer hosting site backup manager',
-    'roles' => array(),
-    'module' => 'hosting_site_backup_manager',
-  );
-
   // Exported permission: 'administer menu'.
   $permissions['administer menu'] = array(
     'name' => 'administer menu',

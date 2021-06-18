@@ -34,7 +34,6 @@ dependencies[] = hosting_platform
 dependencies[] = hosting_server
 dependencies[] = hosting_signup
 dependencies[] = hosting_site
-dependencies[] = hosting_site_backup_manager
 dependencies[] = hosting_ssl
 dependencies[] = hosting_subdirs
 dependencies[] = hosting_task
