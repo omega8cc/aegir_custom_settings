@@ -420,16 +420,16 @@ function hosting_custom_settings_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'hosting_queue_tasks_enabled';
+  $strongarm->name = 'hosting_queue_task_gc_enabled';
   $strongarm->value = 1;
-  $export['hosting_queue_tasks_enabled'] = $strongarm;
+  $export['hosting_queue_task_gc_enabled'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'hosting_queue_task_gc_enabled';
+  $strongarm->name = 'hosting_queue_tasks_enabled';
   $strongarm->value = 1;
-  $export['hosting_queue_task_gc_enabled'] = $strongarm;
+  $export['hosting_queue_tasks_enabled'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
