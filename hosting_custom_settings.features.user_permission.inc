@@ -246,7 +246,9 @@ function hosting_custom_settings_user_default_permissions() {
   // Exported permission: 'administer hosting'.
   $permissions['administer hosting'] = array(
     'name' => 'administer hosting',
-    'roles' => array(),
+    'roles' => array(
+      'root' => 'root',
+    ),
     'module' => 'hosting',
   );
 
@@ -260,21 +262,27 @@ function hosting_custom_settings_user_default_permissions() {
   // Exported permission: 'administer hosting features'.
   $permissions['administer hosting features'] = array(
     'name' => 'administer hosting features',
-    'roles' => array(),
+    'roles' => array(
+      'root' => 'root',
+    ),
     'module' => 'hosting',
   );
 
   // Exported permission: 'administer hosting queues'.
   $permissions['administer hosting queues'] = array(
     'name' => 'administer hosting queues',
-    'roles' => array(),
+    'roles' => array(
+      'root' => 'root',
+    ),
     'module' => 'hosting',
   );
 
   // Exported permission: 'administer hosting settings'.
   $permissions['administer hosting settings'] = array(
     'name' => 'administer hosting settings',
-    'roles' => array(),
+    'roles' => array(
+      'root' => 'root',
+    ),
     'module' => 'hosting',
   );
 
@@ -637,7 +645,9 @@ function hosting_custom_settings_user_default_permissions() {
   // Exported permission: 'create lock task'.
   $permissions['create lock task'] = array(
     'name' => 'create lock task',
-    'roles' => array(),
+    'roles' => array(
+      'root' => 'root',
+    ),
     'module' => 'hosting_task',
   );
 
@@ -825,7 +835,9 @@ function hosting_custom_settings_user_default_permissions() {
   // Exported permission: 'create unlock task'.
   $permissions['create unlock task'] = array(
     'name' => 'create unlock task',
-    'roles' => array(),
+    'roles' => array(
+      'root' => 'root',
+    ),
     'module' => 'hosting_task',
   );
 
@@ -1694,6 +1706,7 @@ function hosting_custom_settings_user_default_permissions() {
     'name' => 'update status of tasks',
     'roles' => array(
       'aegir administrator' => 'aegir administrator',
+      'root' => 'root',
     ),
     'module' => 'hosting_task',
   );
