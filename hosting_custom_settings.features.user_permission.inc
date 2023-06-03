@@ -89,16 +89,6 @@ function hosting_custom_settings_user_default_permissions() {
     'module' => 'hosting',
   );
 
-  // Exported permission: 'access hosting signup form'.
-  $permissions['access hosting signup form'] = array(
-    'name' => 'access hosting signup form',
-    'roles' => array(
-      'admin' => 'admin',
-      'root' => 'root',
-    ),
-    'module' => 'hosting_signup',
-  );
-
   // Exported permission: 'access hosting wizard'.
   $permissions['access hosting wizard'] = array(
     'name' => 'access hosting wizard',
