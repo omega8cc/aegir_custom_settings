@@ -272,17 +272,6 @@ function hosting_custom_settings_user_default_permissions() {
     'module' => 'hosting_alias',
   );
 
-  // Exported permission: 'administer hosting backup queue'.
-  $permissions['administer hosting backup queue'] = array(
-    'name' => 'administer hosting backup queue',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'aegir administrator' => 'aegir administrator',
-      'root' => 'root',
-    ),
-    'module' => 'hosting_backup_queue',
-  );
-
   // Exported permission: 'administer hosting features'.
   $permissions['administer hosting features'] = array(
     'name' => 'administer hosting features',
@@ -311,17 +300,6 @@ function hosting_custom_settings_user_default_permissions() {
       'root' => 'root',
     ),
     'module' => 'hosting',
-  );
-
-  // Exported permission: 'administer hosting site backup manager'.
-  $permissions['administer hosting site backup manager'] = array(
-    'name' => 'administer hosting site backup manager',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'aegir administrator' => 'aegir administrator',
-      'root' => 'root',
-    ),
-    'module' => 'hosting_site_backup_manager',
   );
 
   // Exported permission: 'administer menu'.
@@ -463,17 +441,6 @@ function hosting_custom_settings_user_default_permissions() {
     'module' => 'system',
   );
 
-  // Exported permission: 'bypass all quotas'.
-  $permissions['bypass all quotas'] = array(
-    'name' => 'bypass all quotas',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'aegir administrator' => 'aegir administrator',
-      'root' => 'root',
-    ),
-    'module' => 'hosting_quota',
-  );
-
   // Exported permission: 'bypass node access'.
   $permissions['bypass node access'] = array(
     'name' => 'bypass node access',
@@ -482,15 +449,6 @@ function hosting_custom_settings_user_default_permissions() {
       'root' => 'root',
     ),
     'module' => 'node',
-  );
-
-  // Exported permission: 'bypass resource sites limit'.
-  $permissions['bypass resource sites limit'] = array(
-    'name' => 'bypass resource sites limit',
-    'roles' => array(
-      'root' => 'root',
-    ),
-    'module' => 'hosting_quota',
   );
 
   // Exported permission: 'cancel account'.
@@ -569,17 +527,6 @@ function hosting_custom_settings_user_default_permissions() {
       'root' => 'root',
     ),
     'module' => 'hosting_cron',
-  );
-
-  // Exported permission: 'create backup schedules'.
-  $permissions['create backup schedules'] = array(
-    'name' => 'create backup schedules',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'aegir administrator' => 'aegir administrator',
-      'root' => 'root',
-    ),
-    'module' => 'hosting_backup_queue',
   );
 
   // Exported permission: 'create backup task'.
@@ -1000,17 +947,6 @@ function hosting_custom_settings_user_default_permissions() {
     'module' => 'hosting_ssl',
   );
 
-  // Exported permission: 'create sync task'.
-  $permissions['create sync task'] = array(
-    'name' => 'create sync task',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'aegir administrator' => 'aegir administrator',
-      'root' => 'root',
-    ),
-    'module' => 'hosting_sync',
-  );
-
   // Exported permission: 'create task content'.
   $permissions['create task content'] = array(
     'name' => 'create task content',
@@ -1249,18 +1185,6 @@ function hosting_custom_settings_user_default_permissions() {
     'name' => 'display drupal links',
     'roles' => array(),
     'module' => 'admin_menu',
-  );
-
-  // Exported permission: 'edit all quotas'.
-  $permissions['edit all quotas'] = array(
-    'name' => 'edit all quotas',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'aegir account manager' => 'aegir account manager',
-      'aegir administrator' => 'aegir administrator',
-      'root' => 'root',
-    ),
-    'module' => 'hosting_quota',
   );
 
   // Exported permission: 'edit any book content'.
@@ -1868,17 +1792,6 @@ function hosting_custom_settings_user_default_permissions() {
     'module' => 'features',
   );
 
-  // Exported permission: 'import sites from remote servers'.
-  $permissions['import sites from remote servers'] = array(
-    'name' => 'import sites from remote servers',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'aegir administrator' => 'aegir administrator',
-      'root' => 'root',
-    ),
-    'module' => 'hosting_remote_import',
-  );
-
   // Exported permission: 'manage features'.
   $permissions['manage features'] = array(
     'name' => 'manage features',
@@ -1977,18 +1890,6 @@ function hosting_custom_settings_user_default_permissions() {
     'module' => 'filter',
   );
 
-  // Exported permission: 'view all quotas'.
-  $permissions['view all quotas'] = array(
-    'name' => 'view all quotas',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'aegir account manager' => 'aegir account manager',
-      'aegir administrator' => 'aegir administrator',
-      'root' => 'root',
-    ),
-    'module' => 'hosting_quota',
-  );
-
   // Exported permission: 'view client'.
   $permissions['view client'] = array(
     'name' => 'view client',
@@ -2009,19 +1910,6 @@ function hosting_custom_settings_user_default_permissions() {
       'root' => 'root',
     ),
     'module' => 'hosting_platform',
-  );
-
-  // Exported permission: 'view own quota'.
-  $permissions['view own quota'] = array(
-    'name' => 'view own quota',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'aegir account manager' => 'aegir account manager',
-      'aegir administrator' => 'aegir administrator',
-      'aegir client' => 'aegir client',
-      'root' => 'root',
-    ),
-    'module' => 'hosting_quota',
   );
 
   // Exported permission: 'view own tasks'.
