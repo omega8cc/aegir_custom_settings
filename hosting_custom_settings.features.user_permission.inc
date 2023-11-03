@@ -89,6 +89,16 @@ function hosting_custom_settings_user_default_permissions() {
     'module' => 'hosting',
   );
 
+  // Exported permission: 'access hosting signup form'.
+  $permissions['access hosting signup form'] = array(
+    'name' => 'access hosting signup form',
+    'roles' => array(
+      'admin' => 'admin',
+      'root' => 'root',
+    ),
+    'module' => 'hosting_signup',
+  );
+
   // Exported permission: 'access hosting wizard'.
   $permissions['access hosting wizard'] = array(
     'name' => 'access hosting wizard',
@@ -290,6 +300,13 @@ function hosting_custom_settings_user_default_permissions() {
       'root' => 'root',
     ),
     'module' => 'hosting',
+  );
+
+  // Exported permission: 'administer hosting site backup manager'.
+  $permissions['administer hosting site backup manager'] = array(
+    'name' => 'administer hosting site backup manager',
+    'roles' => array(),
+    'module' => 'hosting_site_backup_manager',
   );
 
   // Exported permission: 'administer menu'.
@@ -602,6 +619,20 @@ function hosting_custom_settings_user_default_permissions() {
       'root' => 'root',
     ),
     'module' => 'hosting_task',
+  );
+
+  // Exported permission: 'create drush lock task'.
+  $permissions['create drush lock task'] = array(
+    'name' => 'create drush lock task',
+    'roles' => array(),
+    'module' => 'hosting_platform',
+  );
+
+  // Exported permission: 'create drush unlock task'.
+  $permissions['create drush unlock task'] = array(
+    'name' => 'create drush unlock task',
+    'roles' => array(),
+    'module' => 'hosting_platform',
   );
 
   // Exported permission: 'create enable task'.
@@ -1447,10 +1478,27 @@ function hosting_custom_settings_user_default_permissions() {
     'module' => 'actions_permissions',
   );
 
+  // Exported permission: 'execute hosting_platform_dunlock_action'.
+  $permissions['execute hosting_platform_dunlock_action'] = array(
+    'name' => 'execute hosting_platform_dunlock_action',
+    'roles' => array(
+      'admin' => 'admin',
+      'aegir account manager' => 'aegir account manager',
+      'aegir administrator' => 'aegir administrator',
+      'aegir platform manager' => 'aegir platform manager',
+      'root' => 'root',
+    ),
+    'module' => 'actions_permissions',
+  );
+
   // Exported permission: 'execute hosting_platform_lock_action'.
   $permissions['execute hosting_platform_lock_action'] = array(
     'name' => 'execute hosting_platform_lock_action',
     'roles' => array(
+      'admin' => 'admin',
+      'aegir account manager' => 'aegir account manager',
+      'aegir administrator' => 'aegir administrator',
+      'aegir platform manager' => 'aegir platform manager',
       'root' => 'root',
     ),
     'module' => 'actions_permissions',
@@ -1460,6 +1508,10 @@ function hosting_custom_settings_user_default_permissions() {
   $permissions['execute hosting_platform_unlock_action'] = array(
     'name' => 'execute hosting_platform_unlock_action',
     'roles' => array(
+      'admin' => 'admin',
+      'aegir account manager' => 'aegir account manager',
+      'aegir administrator' => 'aegir administrator',
+      'aegir platform manager' => 'aegir platform manager',
       'root' => 'root',
     ),
     'module' => 'actions_permissions',
