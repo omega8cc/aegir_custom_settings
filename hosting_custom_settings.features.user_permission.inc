@@ -268,7 +268,9 @@ function hosting_custom_settings_user_default_permissions() {
   // Exported permission: 'administer hosting aliases'.
   $permissions['administer hosting aliases'] = array(
     'name' => 'administer hosting aliases',
-    'roles' => array(),
+    'roles' => array(
+      'root' => 'root',
+    ),
     'module' => 'hosting_alias',
   );
 
@@ -354,6 +356,7 @@ function hosting_custom_settings_user_default_permissions() {
     'name' => 'administer platforms',
     'roles' => array(
       'admin' => 'admin',
+      'administrator' => 'administrator',
       'aegir platform manager' => 'aegir platform manager',
       'root' => 'root',
     ),
@@ -388,6 +391,7 @@ function hosting_custom_settings_user_default_permissions() {
     'name' => 'administer sites',
     'roles' => array(
       'admin' => 'admin',
+      'administrator' => 'administrator',
       'root' => 'root',
     ),
     'module' => 'hosting_site',
@@ -594,6 +598,7 @@ function hosting_custom_settings_user_default_permissions() {
     'name' => 'create clone task',
     'roles' => array(
       'admin' => 'admin',
+      'administrator' => 'administrator',
       'aegir client' => 'aegir client',
       'root' => 'root',
     ),
@@ -621,17 +626,31 @@ function hosting_custom_settings_user_default_permissions() {
     'module' => 'hosting_task',
   );
 
-  // Exported permission: 'create drush lock task'.
-  $permissions['create drush lock task'] = array(
-    'name' => 'create drush lock task',
-    'roles' => array(),
+  // Exported permission: 'create dlock task'.
+  $permissions['create dlock task'] = array(
+    'name' => 'create dlock task',
+    'roles' => array(
+      'admin' => 'admin',
+      'administrator' => 'administrator',
+      'aegir account manager' => 'aegir account manager',
+      'aegir administrator' => 'aegir administrator',
+      'aegir platform manager' => 'aegir platform manager',
+      'root' => 'root',
+    ),
     'module' => 'hosting_platform',
   );
 
-  // Exported permission: 'create drush unlock task'.
-  $permissions['create drush unlock task'] = array(
-    'name' => 'create drush unlock task',
-    'roles' => array(),
+  // Exported permission: 'create dunlock task'.
+  $permissions['create dunlock task'] = array(
+    'name' => 'create dunlock task',
+    'roles' => array(
+      'admin' => 'admin',
+      'administrator' => 'administrator',
+      'aegir account manager' => 'aegir account manager',
+      'aegir administrator' => 'aegir administrator',
+      'aegir platform manager' => 'aegir platform manager',
+      'root' => 'root',
+    ),
     'module' => 'hosting_platform',
   );
 
@@ -701,6 +720,7 @@ function hosting_custom_settings_user_default_permissions() {
   $permissions['create lock task'] = array(
     'name' => 'create lock task',
     'roles' => array(
+      'admin' => 'admin',
       'root' => 'root',
     ),
     'module' => 'hosting_task',
@@ -722,6 +742,7 @@ function hosting_custom_settings_user_default_permissions() {
     'name' => 'create migrate task',
     'roles' => array(
       'admin' => 'admin',
+      'administrator' => 'administrator',
       'aegir client' => 'aegir client',
       'root' => 'root',
     ),
@@ -757,6 +778,7 @@ function hosting_custom_settings_user_default_permissions() {
     'name' => 'create platform',
     'roles' => array(
       'admin' => 'admin',
+      'administrator' => 'administrator',
       'aegir platform manager' => 'aegir platform manager',
       'root' => 'root',
     ),
@@ -871,6 +893,7 @@ function hosting_custom_settings_user_default_permissions() {
     'name' => 'create site',
     'roles' => array(
       'admin' => 'admin',
+      'administrator' => 'administrator',
       'aegir client' => 'aegir client',
       'root' => 'root',
     ),
@@ -882,6 +905,10 @@ function hosting_custom_settings_user_default_permissions() {
     'name' => 'create site aliases',
     'roles' => array(
       'admin' => 'admin',
+      'administrator' => 'administrator',
+      'aegir account manager' => 'aegir account manager',
+      'aegir administrator' => 'aegir administrator',
+      'aegir client' => 'aegir client',
       'root' => 'root',
     ),
     'module' => 'hosting_alias',
@@ -982,6 +1009,7 @@ function hosting_custom_settings_user_default_permissions() {
   $permissions['create unlock task'] = array(
     'name' => 'create unlock task',
     'roles' => array(
+      'admin' => 'admin',
       'root' => 'root',
     ),
     'module' => 'hosting_task',
@@ -1171,6 +1199,8 @@ function hosting_custom_settings_user_default_permissions() {
     'name' => 'delete platform',
     'roles' => array(
       'admin' => 'admin',
+      'administrator' => 'administrator',
+      'aegir platform manager' => 'aegir platform manager',
       'root' => 'root',
     ),
     'module' => 'hosting_platform',
@@ -1195,6 +1225,7 @@ function hosting_custom_settings_user_default_permissions() {
     'name' => 'delete site',
     'roles' => array(
       'admin' => 'admin',
+      'administrator' => 'administrator',
       'aegir client' => 'aegir client',
       'root' => 'root',
     ),
@@ -1414,6 +1445,8 @@ function hosting_custom_settings_user_default_permissions() {
     'name' => 'edit platform',
     'roles' => array(
       'admin' => 'admin',
+      'administrator' => 'administrator',
+      'aegir platform manager' => 'aegir platform manager',
       'root' => 'root',
     ),
     'module' => 'hosting_platform',
@@ -1431,6 +1464,7 @@ function hosting_custom_settings_user_default_permissions() {
     'name' => 'edit site',
     'roles' => array(
       'admin' => 'admin',
+      'administrator' => 'administrator',
       'aegir client' => 'aegir client',
       'root' => 'root',
     ),
@@ -1470,8 +1504,10 @@ function hosting_custom_settings_user_default_permissions() {
     'name' => 'execute hosting_platform_delete_action',
     'roles' => array(
       'admin' => 'admin',
+      'administrator' => 'administrator',
       'aegir account manager' => 'aegir account manager',
       'aegir administrator' => 'aegir administrator',
+      'aegir client' => 'aegir client',
       'aegir platform manager' => 'aegir platform manager',
       'root' => 'root',
     ),
@@ -1483,6 +1519,7 @@ function hosting_custom_settings_user_default_permissions() {
     'name' => 'execute hosting_platform_dunlock_action',
     'roles' => array(
       'admin' => 'admin',
+      'administrator' => 'administrator',
       'aegir account manager' => 'aegir account manager',
       'aegir administrator' => 'aegir administrator',
       'aegir platform manager' => 'aegir platform manager',
@@ -1496,8 +1533,10 @@ function hosting_custom_settings_user_default_permissions() {
     'name' => 'execute hosting_platform_lock_action',
     'roles' => array(
       'admin' => 'admin',
+      'administrator' => 'administrator',
       'aegir account manager' => 'aegir account manager',
       'aegir administrator' => 'aegir administrator',
+      'aegir client' => 'aegir client',
       'aegir platform manager' => 'aegir platform manager',
       'root' => 'root',
     ),
@@ -1509,6 +1548,7 @@ function hosting_custom_settings_user_default_permissions() {
     'name' => 'execute hosting_platform_unlock_action',
     'roles' => array(
       'admin' => 'admin',
+      'administrator' => 'administrator',
       'aegir account manager' => 'aegir account manager',
       'aegir administrator' => 'aegir administrator',
       'aegir platform manager' => 'aegir platform manager',
@@ -1522,8 +1562,10 @@ function hosting_custom_settings_user_default_permissions() {
     'name' => 'execute hosting_platform_verify_action',
     'roles' => array(
       'admin' => 'admin',
+      'administrator' => 'administrator',
       'aegir account manager' => 'aegir account manager',
       'aegir administrator' => 'aegir administrator',
+      'aegir client' => 'aegir client',
       'aegir platform manager' => 'aegir platform manager',
       'root' => 'root',
     ),
@@ -1534,6 +1576,7 @@ function hosting_custom_settings_user_default_permissions() {
   $permissions['execute hosting_server_flush_drush_cache_action'] = array(
     'name' => 'execute hosting_server_flush_drush_cache_action',
     'roles' => array(
+      'administrator' => 'administrator',
       'root' => 'root',
     ),
     'module' => 'actions_permissions',
@@ -1544,6 +1587,7 @@ function hosting_custom_settings_user_default_permissions() {
     'name' => 'execute hosting_site_backup_action',
     'roles' => array(
       'admin' => 'admin',
+      'administrator' => 'administrator',
       'aegir account manager' => 'aegir account manager',
       'aegir administrator' => 'aegir administrator',
       'aegir client' => 'aegir client',
@@ -1557,6 +1601,7 @@ function hosting_custom_settings_user_default_permissions() {
     'name' => 'execute hosting_site_delete_action',
     'roles' => array(
       'admin' => 'admin',
+      'administrator' => 'administrator',
       'aegir account manager' => 'aegir account manager',
       'aegir administrator' => 'aegir administrator',
       'root' => 'root',
@@ -1569,6 +1614,7 @@ function hosting_custom_settings_user_default_permissions() {
     'name' => 'execute hosting_site_disable_action',
     'roles' => array(
       'admin' => 'admin',
+      'administrator' => 'administrator',
       'aegir account manager' => 'aegir account manager',
       'aegir administrator' => 'aegir administrator',
       'aegir client' => 'aegir client',
@@ -1582,6 +1628,7 @@ function hosting_custom_settings_user_default_permissions() {
     'name' => 'execute hosting_site_enable_action',
     'roles' => array(
       'admin' => 'admin',
+      'administrator' => 'administrator',
       'aegir account manager' => 'aegir account manager',
       'aegir administrator' => 'aegir administrator',
       'aegir client' => 'aegir client',
@@ -1595,8 +1642,10 @@ function hosting_custom_settings_user_default_permissions() {
     'name' => 'execute hosting_site_flush_cache_action',
     'roles' => array(
       'admin' => 'admin',
+      'administrator' => 'administrator',
       'aegir account manager' => 'aegir account manager',
       'aegir administrator' => 'aegir administrator',
+      'aegir client' => 'aegir client',
       'root' => 'root',
     ),
     'module' => 'actions_permissions',
@@ -1607,8 +1656,10 @@ function hosting_custom_settings_user_default_permissions() {
     'name' => 'execute hosting_site_rebuild_registry_action',
     'roles' => array(
       'admin' => 'admin',
+      'administrator' => 'administrator',
       'aegir account manager' => 'aegir account manager',
       'aegir administrator' => 'aegir administrator',
+      'aegir client' => 'aegir client',
       'root' => 'root',
     ),
     'module' => 'actions_permissions',
@@ -1626,6 +1677,7 @@ function hosting_custom_settings_user_default_permissions() {
     'name' => 'execute hosting_site_verify_action',
     'roles' => array(
       'admin' => 'admin',
+      'administrator' => 'administrator',
       'aegir account manager' => 'aegir account manager',
       'aegir administrator' => 'aegir administrator',
       'aegir client' => 'aegir client',
@@ -1899,6 +1951,7 @@ function hosting_custom_settings_user_default_permissions() {
   $permissions['update status of tasks'] = array(
     'name' => 'update status of tasks',
     'roles' => array(
+      'admin' => 'admin',
       'aegir administrator' => 'aegir administrator',
       'root' => 'root',
     ),
@@ -1949,6 +2002,11 @@ function hosting_custom_settings_user_default_permissions() {
   $permissions['view locked platforms'] = array(
     'name' => 'view locked platforms',
     'roles' => array(
+      'admin' => 'admin',
+      'administrator' => 'administrator',
+      'aegir account manager' => 'aegir account manager',
+      'aegir administrator' => 'aegir administrator',
+      'aegir platform manager' => 'aegir platform manager',
       'root' => 'root',
     ),
     'module' => 'hosting_platform',
@@ -1994,6 +2052,8 @@ function hosting_custom_settings_user_default_permissions() {
     'name' => 'view platform',
     'roles' => array(
       'admin' => 'admin',
+      'administrator' => 'administrator',
+      'aegir platform manager' => 'aegir platform manager',
       'root' => 'root',
     ),
     'module' => 'hosting_platform',
@@ -2022,6 +2082,7 @@ function hosting_custom_settings_user_default_permissions() {
     'name' => 'view site',
     'roles' => array(
       'admin' => 'admin',
+      'administrator' => 'administrator',
       'aegir client' => 'aegir client',
       'root' => 'root',
     ),
